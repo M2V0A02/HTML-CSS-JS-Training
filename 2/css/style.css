@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    color:#445161;
+    font-weight: 400;
+    margin-top:12px;
+}
+
+h2 {
+    font-size: 25px;
+    color:#445161;
+    font-weight: 400;
+    margin-top:12px;
+}
+
+h3 {
+    font-size: 20px;
+    color:#445161;
+    font-weight: 400;
+    margin-top:12px;
+}
+
+p {
+    font-size: 14px;
+    color:#333333;
+    margin-top:0px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.red {
+    color: red;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.big{
+    font-size: 24px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.shadow{
+    text-shadow: 0px 0px 10px;
+}
+
+.times-new-roman{
+    font-family: 'Times New Roman', Times, serif;
+}
