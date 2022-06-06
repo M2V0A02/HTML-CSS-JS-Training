@@ -1,0 +1,44 @@
+<form action="#" method="POST" enctype="multipart/form-data">
+    <p>Имя</p>
+    <input type="text">
+    <p>Пароль</p>
+    <input type="password">
+    <p>Телефон</p>
+    <input type="tel" value="8" pattern="[0-9]{11}">
+    <div>
+        <p>Пол</p>
+        <div>
+            <input type="radio" checked name="gender" value="male">Мужской</input>
+        </div>
+        <div>
+            <input type="radio"  name="gender" value="female">Женский</input>
+        </div>
+    </div>
+    <div>
+        <p>Имущество
+            <div><input type="checkbox" checked name="bike" value="true">Велик</div>
+            <div><input type="checkbox" name="car" value="true" >Машина</div>
+            <div><input type="checkbox" name="flat" value="true" disabled>Квартира</div>
+        </p>
+    </div>
+    <div>
+        <p>Дополнительная информация</p>
+        <textarea name="additional_info" id="" cols="20" rows="2"></textarea>
+    </div>
+    <div>
+        <p>Прикрепить фото</p>
+        <input type="file" name="file">
+    </div>
+    <div>
+        <p>Любимый цвет</p>
+        <select name="color">
+            <option value="red">Красный</option>
+            <option selected value="green">Зеленый</option>
+            <option value="yellow">Желтый</option>
+        </select>
+    </div>
+    <div>
+        <p>Действия</p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button></div>
+</form>
