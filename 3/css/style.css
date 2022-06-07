@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+div{
+    font-size: 14px;
+    margin: 20px 20px 20px 0;
+}
+
+span{
+    font-size: 14px;
+}
+
+a{
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
+}
+
+
+.box1{
+    width:500px;
+}
+
+.block{
+    display: block;
+    line-height: 1;
+}
+
+.box2{
+    padding-bottom:20px;
+    width:600px;
+}
+
+.box3{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.boxp{
+    display: inline-block;
+}
+
+.box4{
+    padding: 0 10px 0 10px;
+    display: block;
+}
+
+.box5{
+    padding: 0 10px 0 0;
+    margin-right:10px;
+}
+
+.box6{
+    display: block;
+    padding: 25px 0 25px 0;
+}
