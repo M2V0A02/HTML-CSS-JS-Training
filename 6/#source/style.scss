@@ -1,12 +1,16 @@
 // Подключение normalize.scss
 /* Подключение normalize.scss */
 @import "normalize.scss";
+@import "fonts.scss";
+
 
 $bold:700;
 $small-font: 14px + 8px;
 $medium-font: 20px + 10px;
 $big-font: 21px;
-$font-family: Arial;
+$font-family: 'PF Din Text Comp Pro';
+
+
 
 @mixin fontz($w, $h){
     width: $w + 50px;

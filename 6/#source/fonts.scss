@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PFDinTextCompPro-Regular.woff2') format('woff2'),
+        url('../fonts/PFDinTextCompPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PFDinTextCompPro-Medium.woff2') format('woff2'),
+        url('../fonts/PFDinTextCompPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

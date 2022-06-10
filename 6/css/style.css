@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Подключение normalize.scss */
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 *,
 *::before,
 *::after {
@@ -83,9 +85,23 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "PF Din Text Comp Pro";
+  src: url("../fonts/PFDinTextCompPro-Regular.woff2") format("woff2"), url("../fonts/PFDinTextCompPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Din Text Comp Pro";
+  src: url("../fonts/PFDinTextCompPro-Medium.woff2") format("woff2"), url("../fonts/PFDinTextCompPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background-color: #e8e8e8;
-  font-family: Arial;
+  font-family: "PF Din Text Comp Pro";
 }
 
 h3 {
@@ -202,6 +218,6 @@ input:focus {
 
 h3, ul li {
   font-size: 22px;
-  font-family: Arial;
+  font-family: "PF Din Text Comp Pro";
   color: #000000;
 }
