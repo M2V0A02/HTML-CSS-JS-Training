@@ -1,0 +1,151 @@
+// Подключение normalize.scss
+/* Подключение normalize.scss */
+@import "normalize.scss";
+
+$bold:700;
+$small-font: 14px + 8px;
+$medium-font: 20px + 10px;
+$big-font: 21px;
+$font-family: Arial;
+
+@mixin fontz($w, $h){
+    width: $w + 50px;
+    height: $h;
+}
+
+body{
+    background-color: #e8e8e8;
+    font-family: $font-family;
+}
+
+h3{
+    @extend %base-font;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin:0 auto 0 auto;
+}
+
+ul{
+    margin: 0 auto 0 auto;
+    list-style-type: none;
+}
+
+ul {
+    li{
+        font-size: $medium-font;
+        line-height: 36px;
+        font-weight: 400;
+        color: #273d46;
+        @extend %base-font;
+
+        &::before{
+            content: "";
+            width: 26px;
+            height: 20px;
+            display: inline-block;
+            background: url(../img/check.png) no-repeat;
+        }
+    }
+    
+}
+
+
+.line-through{
+    text-decoration: line-through;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.bold{
+    font-weight: $bold;
+    &:hover{
+        font-weight: 400;
+        color: red;
+    }
+    &:hover::before{
+        font-weight: 400;
+        background-color: red;
+    }
+}
+
+.italic{
+    font-style: italic;
+    &:hover{
+        font-style: normal;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+    &:hover{
+        text-transform: none;
+    }
+}
+
+button{
+    display: block;
+    border: none;
+    border-radius: 25px;
+    width: 199px;
+    height: 44px;
+    box-shadow: 0px 6px 40px 0px;
+    background-color: rgba(128,183,179,0.54);
+    font-family: Arial;
+    font-size: $small-font;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    margin: 0px auto 50px auto;
+
+    &:hover{
+        background-color: #3a5856;;
+    }
+    
+    &:active{
+        background-color: #818181;
+    }
+}
+
+.shape-button{
+    width: 21px;
+    height: 14px;
+    opacity: 0.8;
+    display: inline;
+    border:none;
+    margin:0;
+}
+
+input{
+    @include fontz(250px, 40px);
+    &:focus{
+        border: 1px solid #7fbed5;
+        box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+    }
+}
+
+.red-line{
+    &::first-line{
+        color:red;
+    }
+    
+}
+
+.red-letter{
+    &::first-letter{
+        color:red;
+    }   
+}
+
+
+
+
+%base-font{
+    font-size: $small-font;
+    font-family: $font-family;
+    color: #000000;
+}
