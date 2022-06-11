@@ -87,6 +87,32 @@ body {
   font-family: Lato;
 }
 
+.title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #000000;
+  text-align: center;
+}
+
+.hr {
+  width: 81px;
+  border-top: 1px solid #000;
+  margin: 15px auto 15px auto;
+}
+
+.read-more {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  background: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
 .title_main {
   background: url("../imgs/bg_header_743.png") no-repeat;
   height: 1080px;
@@ -122,24 +148,15 @@ body {
 }
 
 .title_main__button {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.06em;
-  background: none;
-  border: 1px solid white;
-  padding: 10px 20px;
   color: white;
-  text-transform: uppercase;
 }
 
 .about {
-  height: 1080px;
   color: #000;
-  text-align: center;
+  margin: 0 0 150px 0;
 }
 
 .about__nav {
-  display: inline-block;
   margin: 15px 0 0 0;
 }
 
@@ -147,6 +164,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .item-nav__link {
@@ -172,21 +192,6 @@ body {
   padding: 100px 0 0 0;
 }
 
-.about__title {
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #000000;
-}
-
-.about__hr {
-  width: 81px;
-  border-top: 1px solid #000;
-  margin: 15px auto 15px auto;
-}
-
 .about__text {
   margin: 0 auto 0 auto;
   width: 700px;
@@ -203,6 +208,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 100px 0;
 }
 
 .about__column {
@@ -233,13 +239,44 @@ body {
   color: #000000;
   text-transform: uppercase;
   padding: 25px 0;
+  text-align: center;
 }
 
 .item-about__text {
+  text-align: center;
   font-size: 14px;
   line-height: 26px;
   font-weight: 300;
   color: #868585;
   width: 250px;
   margin: auto;
+}
+
+.portfolio {
+  margin: 100px 0;
+}
+
+.example-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 75%;
+}
+
+.example-portfolio__item {
+  background-color: #eaeaea;
+  width: 90%;
+  height: 250px;
+  margin: 25px 25px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.example-portfolio__button {
+  color: #000;
+  border-color: #000;
 }
