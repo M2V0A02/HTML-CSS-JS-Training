@@ -4,25 +4,25 @@
 body{
     font-family: Lato;
 }
-.title {
+.title_main {
     background: url("../imgs/bg_header_743.png") no-repeat;
     height: 1080px;
     color: #ffffff;
 }
-.title__body {
+.title_main__body {
     height: 100%;
     text-align: center;
     padding: 100px 0 0 0;
 }
 
-.title__logo{
+.title_main__logo{
     width: 195px;
     height: 123px;
     background: url("../imgs/layer_33_copy_2_859.png");
-    margin:25px auto 0 auto;
+    display: inline-block;
 }
 
-.title__header {
+.title_main__header {
     font-size: 34px;
     line-height: 40px;
     font-weight: 900;
@@ -35,12 +35,12 @@ body{
 
 }
 
-.title__title_text {
+.title_main__title_text {
     font-size: 26px;
     font-weight: 400;
     text-transform: none;
 }
-.title__button {
+.title_main__button {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.06em;
@@ -51,26 +51,108 @@ body{
     text-transform: uppercase;
 }
 .about {
+    height: 1080px;
+    color: #000;
+    text-align: center;
 }
+
+.about__nav {
+    display: inline-block;
+    margin: 15px 0 0 0;
+}
+.item-nav {
+    display: flex;
+}
+
+.item-nav__link {
+    margin: 0 15px 0 15px;
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+.item-nav__link__a{
+    text-decoration: none;
+    color: #3c3c3c;
+    text-transform: uppercase;
+}
+
+.item-nav__link__a:hover{
+    color: #ada074;
+}
+
 .about__body {
+    
 }
+
 .about__header {
+    padding: 100px 0 0 0;
 }
+
 .about__title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #000000;
 }
+
+.about__hr{
+    width: 81px;
+    border-top: 1px solid #000;
+    margin: 15px auto 15px auto;
+}
+
 .about__text {
+    margin:0 auto 0 auto;
+    width: 700px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #868585;
 }
 .about__row {
+    display: flex;
+    justify-content: center;
 }
+
 .about__column {
+    margin: 0 15px;
 }
 .item-about {
+    width: 300px;
 }
 .item-about__icon {
+    border: 1px solid #f1f1f1;
+    border-radius: 50px;
+    width: 100px;
+    margin: auto;
 }
+
+.item-about__icon__img{
+    padding: 20px;
+    margin: auto;
+} 
+
 .item-about__title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 25px 0;
 }
 .item-about__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #868585;
+    width:250px;
+    margin: auto;
 }
 .portfolio {
 }

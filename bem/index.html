@@ -8,48 +8,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="title">
-        <div class="title__body">
-            <div class="title__logo"></div>
-            <div class="title__header">
-                <p class="title__title">clear, smart, attractive design</p>
-                <p class="title__title_text">for your app, logo, website</p>
+    <div  class="title_main">
+        <a name="home"></a>
+        <div class="title_main__body">
+            <div class="title_main__logo"></div>
+            <div class="title_main__header">
+                <p class="title_main__title">clear, smart, attractive design</p>
+                <p class="title_main__title_text">for your app, logo, website</p>
             </div>
-            <button class="title__button">Read more</button>
+            <button class="title_main__button">Read more</button>
         </div>
     </div>
     <div class="about">
+        <a name="about-us"></a>
+        <nav class="about__nav">
+            <ul class="item-nav">
+                <li class="item-nav__link"><a class="item-nav__link__a" href="#home">Home </a></li>
+                <li class="item-nav__link"><a class="item-nav__link__a" href="#about-us">About us </a></li>
+                <li class="item-nav__link"><a class="item-nav__link__a" href="#portfolio">Portfolio </a></li>
+                <li class="item-nav__link"><a class="item-nav__link__a" href="#contact">Contact </a></li>
+            </ul>
+        </nav>
         <div class="about__body">
             <div class="about__header">
                 <div class="about__title title">about</div>
+                <div class="about__hr"></div>
                 <div class="about__text">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor. In our design process, we make sure to stay one step ahead of the latest trends, never forgetting to abide by key web standards.</div>
             </div>
             <div class="about__row">
                 <div class="about__column">
                     <div class="item-about">
-                        <div class="item-about__icon"><img src="" alt=""></div>
+                        <div class="item-about__icon"><img class="item-about__icon__img" src="imgs/web.png" alt=""></div>
                         <div class="item-about__title">WEB</div>
-                        <div class="item-about__text">We tend</div>
+                        <div class="item-about__text">We tend to deliver unique and functional design, through innovation and creativity.</div>
                     </div>
                 </div>
                 <div class="about__column">
                     <div class="item-about">
-                        <div class="item-about__icon"><img src="" alt=""></div>
-                        <div class="item-about__title">WEB</div>
-                        <div class="item-about__text">We tend</div>
+                        <div class="item-about__icon"><img class="item-about__icon__img" src="imgs/ios.png" alt=""></div>
+                        <div class="item-about__title">iOS and Android</div>
+                        <div class="item-about__text">Text: We seek to bring new businesses and customers closer together through valuable insights and proper targeting.</div>
                     </div>
                 </div>
                 <div class="about__column">
                     <div class="item-about">
-                        <div class="item-about__icon"><img src="" alt=""></div>
-                        <div class="item-about__title">WEB</div>
-                        <div class="item-about__text">We tend</div>
+                        <div class="item-about__icon"><img class="item-about__icon__img" src="imgs/marketing.png" alt=""></div>
+                        <div class="item-about__title">Marketing</div>
+                        <div class="item-about__text">We'll help you establish the right goals and build the right paths. Success depends on setting the right intention.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="portfolio">
+        <a name="portfolio"></a>
         <div class="portfolio__body">
             <div class="portfolio__header">Portfolio</div>
             <div class="item-portfolio">
@@ -79,7 +91,8 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div  class="contact">
+            <a name="contact"></a>
             <div class="contact__body">
                 <div class="contact__header"></div>
                 <div class="contact__wrapper">
