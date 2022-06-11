@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 *,
 *::before,
 *::after {
@@ -81,4 +82,52 @@ select {
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+body {
+  font-family: Lato;
+}
+
+.title {
+  background: url("../imgs/bg_header_743.png") no-repeat;
+  height: 1080px;
+  color: #ffffff;
+}
+
+.title__body {
+  height: 100%;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+.title__logo {
+  width: 195px;
+  height: 123px;
+  background: url("../imgs/layer_33_copy_2_859.png");
+  margin: 25px auto 0 auto;
+}
+
+.title__header {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin: 20% 0 20% 0;
+}
+
+.title__title_text {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.title__button {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  background: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
 }

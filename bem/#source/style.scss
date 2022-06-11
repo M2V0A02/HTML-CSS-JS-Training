@@ -1,1 +1,136 @@
 @import "normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    font-family: Lato;
+}
+.title {
+    background: url("../imgs/bg_header_743.png") no-repeat;
+    height: 1080px;
+    color: #ffffff;
+}
+.title__body {
+    height: 100%;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.title__logo{
+    width: 195px;
+    height: 123px;
+    background: url("../imgs/layer_33_copy_2_859.png");
+    margin:25px auto 0 auto;
+}
+
+.title__header {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin: 20% 0 20% 0;
+}
+
+.title__title {
+
+}
+
+.title__title_text {
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: none;
+}
+.title__button {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    background: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.about {
+}
+.about__body {
+}
+.about__header {
+}
+.about__title {
+}
+.about__text {
+}
+.about__row {
+}
+.about__column {
+}
+.item-about {
+}
+.item-about__icon {
+}
+.item-about__title {
+}
+.item-about__text {
+}
+.portfolio {
+}
+.portfolio__body {
+}
+.portfolio__header {
+}
+.item-portfolio {
+}
+.item-portfolio__text {
+}
+.example-portfolio {
+}
+.example-portfolio__item {
+}
+.example-portfolio__button {
+}
+.our-partners {
+}
+.our-partners__body {
+}
+.our-partners__header {
+}
+.item-our-partner {
+}
+.item-our-partner__icon {
+}
+.contact {
+}
+.contact__body {
+}
+.contact__header {
+}
+.contact__wrapper {
+}
+.contact-form {
+}
+.contact-form__name {
+}
+.contact-form_e-mail {
+}
+.contact-form__message {
+}
+.contact-from__button {
+}
+.info-contact {
+}
+.info-contact__text {
+}
+.bold {
+}
+.info-contact__icon {
+}
+.footer {
+}
+.footer__body {
+}
+.item-footer {
+}
+.item-footer__text {
+}
+.footer__copyright {
+}
