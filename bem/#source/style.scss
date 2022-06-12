@@ -1,5 +1,13 @@
 @import "normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../webfonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../webfonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body{
     font-family: Lato;
@@ -13,6 +21,13 @@ body{
     letter-spacing: 0.16em;
     color: #000000;
     text-align: center;
+}
+
+.title_logo{
+    width: 195px;
+    height: 123px;
+    background: url("../imgs/layer_33_copy_2_859.png");
+    display: inline-block;
 }
 
 .hr{
@@ -330,12 +345,34 @@ body{
 }
 
 .footer {
+    background-color: #3c3c3c;
+    text-align: center;
 }
+
+
+
+
 .footer__body {
 }
+
+.footer__body > * {
+    margin: 25px 0;
+}
+
 .item-footer {
 }
-.item-footer__text {
+.item-footer__text_a {
+    text-transform: none;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #a4a4a4;
 }
 .footer__copyright {
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #6c6c6c;
+    margin:0;
+    padding:25px 0 50px 0;
 }
