@@ -23,7 +23,16 @@ body{
     text-align: center;
 }
 
-.title_logo{
+
+.title::after{
+    content: "";
+    border-bottom: 1px solid;
+    display: block;
+    width: 81px;
+    margin: 25px auto;
+}
+
+.logo{
     width: 195px;
     height: 123px;
     background: url("../imgs/layer_33_copy_2_859.png");
@@ -129,9 +138,6 @@ body{
     
 }
 
-.about__hr{
-    
-}
 
 .about__text {
     text-align: center;
