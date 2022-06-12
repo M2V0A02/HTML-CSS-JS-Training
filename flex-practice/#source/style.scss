@@ -1,1 +1,99 @@
 @import "normalize.scss";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background-color: #445063;
+}
+.header__body {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hi {
+    display: flex;
+    flex-direction: column;
+}
+
+.hi__header {
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    color: #ffffff;
+    margin:0 0 35px 0;
+}
+
+.hi__items {
+}
+.hi__item {
+    display: flex;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    color: #ffffff;
+    align-items: center;
+}
+
+.hi__item::before{
+    content: '';
+    display: inline-block;
+    background: url("../img/check.png") no-repeat;
+    width: 25px;
+    height: 25px;
+    margin:0 15px 0 5px;
+}
+
+.header__img {
+    width: 469px;
+    height: 214px;
+}
+.about {
+}
+.about__body {
+}
+.about__img {
+}
+.about__info {
+}
+.about__header {
+}
+.about__text {
+}
+.scrinshots {
+}
+.scrinshots__body {
+}
+.scrinshots__header {
+}
+.row {
+}
+.item-scrinshoots {
+}
+.item-scrinshoots__img {
+}
+.item-scrinshoots__header {
+}
+.item-schrinshoots__text {
+}
+.buy {
+}
+.buy_body {
+}
+.buy__header {
+}
+.item-buy__header {
+}
+.item-buy__header_white {
+}
+.item-buy__text {
+}
+.item-buy__button {
+}
+.footer {
+}
+.footer__text {
+}
