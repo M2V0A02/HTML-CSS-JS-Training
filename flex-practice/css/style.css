@@ -150,6 +150,10 @@ body {
   height: 214px;
 }
 
+.about {
+  background: #f5f5f5;
+}
+
 .about__body {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -193,4 +197,139 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.scrinshots {
+  background: #f5f5f5;
+}
+
+.scrinshots__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.scrinshots__body > * {
+  margin-bottom: 35px;
+}
+
+.scrinshots__body > *:last-child {
+  margin-bottom: 35px;
+}
+
+.scrinshots__header {
+  text-align: center;
+}
+
+.scrinshots__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item-scrinshoots {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "I H" "I P";
+  gap: 25px;
+  width: 45%;
+  width: calc(50% - 15px);
+  margin: 0 15px 35px 0;
+}
+
+.item-scrinshoots__img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: I;
+  background-color: #333333;
+  width: 150px;
+}
+
+.item-scrinshoots__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: H;
+}
+
+.item-schrinshoots__text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: P;
+}
+
+.buy {
+  background-color: #fffefe;
+}
+
+.buy_body {
+  padding: 50px 150px;
+}
+
+.buy__header {
+  text-align: center;
+}
+
+.buy__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.item-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #445063;
+}
+
+.item-buy__header {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 90px;
+  text-align: center;
+}
+
+.item-buy__header_white {
+  background-color: #ffffff;
+  font-family: Arial;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445162;
+  padding: 0px 65px;
+  text-align: center;
+  margin: 0 2px;
+}
+
+.item-buy__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 20px 35px 0 20px;
+}
+
+.item-buy__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #445161;
+  margin: 0 20px 20px 20px;
+  padding: 20px 70px;
 }
