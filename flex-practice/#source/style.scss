@@ -5,11 +5,15 @@ body{
 .header {
     background-color: #445063;
 }
-.header__body {
+
+.body{
     display: flex;
     padding: 50px;
     justify-content: space-between;
     align-items: center;
+}
+.header__body {
+    
 }
 
 .hi {
@@ -54,14 +58,41 @@ body{
 .about {
 }
 .about__body {
+    align-items: flex-start;
+    gap:45px;
 }
 .about__img {
+
 }
+
+.about__img img{
+    max-width: none;
+}
+
 .about__info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
+
+.header-text{
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
 .about__header {
 }
 .about__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
 }
 .scrinshots {
 }
