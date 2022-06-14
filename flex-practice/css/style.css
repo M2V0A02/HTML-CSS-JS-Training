@@ -127,7 +127,7 @@ body {
   margin: 0 0 35px 0;
 }
 
-.hi__item {
+.hi__items li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
