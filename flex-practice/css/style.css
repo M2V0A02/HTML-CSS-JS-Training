@@ -108,7 +108,7 @@ body {
   background-color: #445063;
 }
 
-.body {
+.header__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +198,19 @@ body {
   color: #445161;
 }
 
+.container__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .about__text {
   font-size: 16px;
   line-height: 24px;
@@ -218,13 +231,6 @@ body {
 }
 
 .scrinshots__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 50px;
 }
 
