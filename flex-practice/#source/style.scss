@@ -16,6 +16,11 @@ body{
     
 }
 
+.container{
+	max-width: 1180px;
+	margin: 0px auto;
+}
+
 .hi {
     display: flex;
     flex-direction: column;
@@ -32,6 +37,7 @@ body{
 
 .hi__items {
 }
+
 .hi__item {
     display: flex;
     font-size: 20px;
@@ -39,16 +45,9 @@ body{
     font-weight: 400;
     text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
     color: #ffffff;
-    align-items: center;
-}
-
-.hi__item::before{
-    content: '';
-    display: inline-block;
     background: url("../img/check.png") no-repeat;
-    width: 25px;
-    height: 25px;
-    margin:0 15px 0 5px;
+    padding: 0 0 0 30px;
+    background-position: 0 5px;
 }
 
 .header__img {
