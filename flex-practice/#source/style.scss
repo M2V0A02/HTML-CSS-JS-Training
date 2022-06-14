@@ -36,12 +36,12 @@ body{
 	margin: 0px auto;
 }
 
-.hi {
+.header {
     display: flex;
     flex-direction: column;
 }
 
-.hi__header {
+.header__header {
     font-size: 60px;
     line-height: 1.2;
     font-weight: 400;
@@ -50,10 +50,10 @@ body{
     margin:0 0 35px 0;
 }
 
-.hi__items {
+.header__items {
 }
 
-.hi__items li {
+.header__items li {
     display: flex;
     font-size: 20px;
     line-height: 36px;

@@ -126,7 +126,7 @@ body {
   margin: 0px auto;
 }
 
-.hi {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +136,7 @@ body {
           flex-direction: column;
 }
 
-.hi__header {
+.header__header {
   font-size: 60px;
   line-height: 1.2;
   font-weight: 400;
@@ -145,7 +145,7 @@ body {
   margin: 0 0 35px 0;
 }
 
-.hi__items li {
+.header__items li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
