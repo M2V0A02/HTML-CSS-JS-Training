@@ -200,28 +200,47 @@ img.about-us__inline-img{
 
 .show {
 }
-.show__row {
+
+.show__grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
-.icon1 {
+
+.show__grid img {
+    height: 100%;
+    width: 100%;
 }
-.icon2 {
+
+.show__wide{
+    grid-column: 2 span;
 }
-.icon3 {
+
+.show__high{
+    grid-row: 2 span;
 }
-.icon4 {
-}
-.icon5 {
-}
-.icon6 {
-}
-.icon7 {
-}
-.icon8 {
-}
+
 .show_body {
+    background: #292e35;
+    height: 200px;
+    display: flex;
 }
+
 .show_button {
+    border: 1px solid white;
+    color: white;
+    background-color: #292e35;
+    width: 300px;
+    margin:auto;
+    height: 50px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
 }
+
 .mailing {
 }
 .mailing__logo {
