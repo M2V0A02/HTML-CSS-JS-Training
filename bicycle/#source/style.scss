@@ -358,6 +358,7 @@
 .form-mailing {
     text-align: center;
 }
+
 .form-mailing__input {
     width: 400px;
     height: 69px;
@@ -369,6 +370,11 @@
     font-weight: 400;
     font-style: italic;
     color: #929292;
+}
+@media(max-width:600px){
+    .form-mailing__input{
+        width: 50%;
+    }
 }
 .form-mailing__button {
     font-family: Lato;

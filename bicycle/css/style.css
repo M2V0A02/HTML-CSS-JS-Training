@@ -455,6 +455,11 @@ select {
   color: #929292;
 }
 
+@media (max-width: 600px) {
+  .form-mailing__input {
+    width: 50%;
+  }
+}
 .form-mailing__button {
   font-family: Lato;
   font-size: 24px;
