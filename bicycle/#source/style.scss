@@ -99,6 +99,51 @@
 }
 
 .about-us{
+    &__bicycle-company{
+        position: relative;
+    }
+    
+    &__bicycle-company::after{
+        content: '';
+        width: 113px;
+        height: 118px;
+        position: absolute;
+        left: calc(50% - 52px);
+        top: calc(50% - 59px);
+        display: block;
+        background: url("../img/bicycle-company.png") no-repeat;
+    }
+
+    &__vintage{
+        position: relative;
+    }
+
+    &__vintage::after{
+        content: '';
+        width: 177px;
+        height: 152px;
+        position: absolute;
+        left: calc(50% - 177px / 2);
+        top: calc(50% - 152px / 2);
+        display: block;
+        background: url("../img/vintage.png") no-repeat;
+    }
+
+    &__bicycle{
+        position: relative;
+    }
+
+    &__bicycle::after{
+        content: '';
+        width: 208px;
+        height: 67px;
+        position: absolute;
+        left: calc(50% - 208px / 2);
+        top: calc(50% - 67px / 2);
+        display: block;
+        background: url("../img/bicycles.png") no-repeat;
+    }
+
     &__body {
         padding: 125px 0;
         margin: 0 20%;

@@ -184,6 +184,45 @@ select {
   }
 }
 
+.about-us__bicycle-company {
+  position: relative;
+}
+.about-us__bicycle-company::after {
+  content: "";
+  width: 113px;
+  height: 118px;
+  position: absolute;
+  left: calc(50% - 52px);
+  top: calc(50% - 59px);
+  display: block;
+  background: url("../img/bicycle-company.png") no-repeat;
+}
+.about-us__vintage {
+  position: relative;
+}
+.about-us__vintage::after {
+  content: "";
+  width: 177px;
+  height: 152px;
+  position: absolute;
+  left: calc(50% - 88.5px);
+  top: calc(50% - 76px);
+  display: block;
+  background: url("../img/vintage.png") no-repeat;
+}
+.about-us__bicycle {
+  position: relative;
+}
+.about-us__bicycle::after {
+  content: "";
+  width: 208px;
+  height: 67px;
+  position: absolute;
+  left: calc(50% - 104px);
+  top: calc(50% - 33.5px);
+  display: block;
+  background: url("../img/bicycles.png") no-repeat;
+}
 .about-us__body {
   padding: 125px 0;
   margin: 0 20%;
