@@ -116,7 +116,7 @@ select {
 .menu__logo img {
   margin: 0 auto 0 auto;
 }
-@media (max-width: 790px) {
+@media (max-width: 780px) {
   .menu__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,13 +186,11 @@ select {
 
 .about-us__body {
   padding: 125px 0;
-  margin: 0 250px;
+  margin: 0 20%;
 }
-
 .about-us__body * {
   padding: 0 0 20px 0;
 }
-
 .about-us__header {
   font-family: Lato;
   font-size: 18px;
@@ -203,31 +201,25 @@ select {
   color: #353738;
   text-align: center;
 }
-
-.about-us__header::before {
+.about-us-us__header::before {
   display: block;
   content: "";
   width: 50px;
   height: 50px;
   margin: 50px auto 20px auto;
 }
-
 .about-us__header_frame::before {
   background: url("../img/frame.png") no-repeat;
 }
-
 .about-us__header_wheel::before {
   background: url("../img/wheel.png") no-repeat;
 }
-
 .about-us__header_seat::before {
   background: url("../img/seat.png") no-repeat;
 }
-
 .about-us__header_gears::before {
   background: url("../img/gears.png") no-repeat;
 }
-
 .about-us__text {
   font-family: Lato;
   font-size: 18px;
@@ -236,7 +228,6 @@ select {
   color: #848789;
   text-align: center;
 }
-
 .about-us__text_small {
   padding-left: 10%;
   padding-right: 10%;
@@ -248,7 +239,6 @@ select {
   color: #848789;
   text-align: center;
 }
-
 .about-us__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +246,6 @@ select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .about-us__column {
   height: 600px;
   display: -webkit-box;
@@ -267,22 +256,33 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .about-us__column > img {
   height: 100%;
 }
-
-img.about-us__inline-img {
+.about-us img.about-us__inline-img {
   height: auto;
   margin-top: auto;
 }
-
 .about-us__column_small {
   width: 33%;
 }
-
+.about-us__column_small .about-us__header {
+  padding-top: 50px;
+  margin: 0 auto;
+}
 .about-us__column_medium {
   width: 66%;
+}
+@media (max-width: 780px) {
+  .about-us__body {
+    margin: 0 30px;
+  }
+  .about-us__column_small {
+    width: 100%;
+  }
+  .about-us__column_medium {
+    width: 100%;
+  }
 }
 
 .twitter {

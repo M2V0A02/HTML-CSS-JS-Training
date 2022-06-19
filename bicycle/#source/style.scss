@@ -33,7 +33,7 @@
         margin:0 auto 0 auto;
     }
 
-    @media (max-width:790px){
+    @media (max-width:780px){
         &__row {
             flex-direction: column;
             background: rgba(0, 0, 0, 0.9);
@@ -98,100 +98,119 @@
     }
 }
 
+.about-us{
+    &__body {
+        padding: 125px 0;
+        margin: 0 20%;
+    }
+    
+    &__body * {
+        padding: 0 0 20px 0;
+    }
+    
+    &__header {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #353738;
+        text-align: center;
+    }
+    
+    &-us__header::before{
+        display: block;
+        content: '';
+        width: 50px;
+        height: 50px;
+        margin: 50px auto 20px auto;
+    }
+    
+    
+    
+    &__header_frame::before{
+        background: url("../img/frame.png") no-repeat;
+    }
+    
+    &__header_wheel::before {
+        background: url("../img/wheel.png") no-repeat;
+    }
+    
+    &__header_seat::before {
+        background: url("../img/seat.png") no-repeat;
+    }
+    
+    &__header_gears::before{
+        background: url("../img/gears.png") no-repeat;
+    }
+    
+    &__text {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 400;
+        color: #848789;
+        text-align: center;
+    }
+    
+    &__text_small {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 20px;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 400;
+        color: #848789;
+        text-align: center;
+    }
+    
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__column {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__column > img {
+        height: 100%;
+    }
+    
+    img.about-us__inline-img{
+        height: auto;
+        margin-top: auto;
+    }
+    
+    &__column_small{
+        width: 33%;
+    }
 
-.about-us__body {
-    padding: 125px 0;
-    margin: 0 250px;
-}
+    &__column_small &__header{
+        padding-top: 50px;
+        margin:0 auto;
+    }
+    
+    &__column_medium{
+        width: 66%;
+    }
 
-.about-us__body * {
-    padding: 0 0 20px 0;
-}
-
-.about-us__header {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #353738;
-    text-align: center;
-}
-
-.about-us__header::before{
-    display: block;
-    content: '';
-    width: 50px;
-    height: 50px;
-    margin: 50px auto 20px auto;
-}
-
-
-
-.about-us__header_frame::before{
-    background: url("../img/frame.png") no-repeat;
-}
-
-.about-us__header_wheel::before {
-    background: url("../img/wheel.png") no-repeat;
-}
-
-.about-us__header_seat::before {
-    background: url("../img/seat.png") no-repeat;
-}
-
-.about-us__header_gears::before{
-    background: url("../img/gears.png") no-repeat;
-}
-
-.about-us__text {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 34px;
-    font-weight: 400;
-    color: #848789;
-    text-align: center;
-}
-
-.about-us__text_small {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 20px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: 400;
-    color: #848789;
-    text-align: center;
-}
-
-.about-us__row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about-us__column {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-us__column > img {
-    height: 100%;
-}
-
-img.about-us__inline-img{
-    height: auto;
-    margin-top: auto;
-}
-
-.about-us__column_small{
-    width: 33%;
-}
-
-.about-us__column_medium{
-    width: 66%;
+    @media(max-width:780px){
+        &__body{
+            margin:0 30px;
+        } 
+        &__column_small{
+            width: 100%;
+        }
+        
+        &__column_medium{
+            width: 100%;
+        }
+    }
 }
 
 .twitter {
