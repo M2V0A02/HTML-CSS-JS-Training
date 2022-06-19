@@ -371,6 +371,7 @@
     font-style: italic;
     color: #929292;
 }
+
 @media(max-width:600px){
     .form-mailing__input{
         width: 50%;
@@ -395,6 +396,25 @@
     align-items: center;
     margin: 0 10%;
     justify-content: space-between;
+}
+
+@media(max-width:780px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer > * {
+        padding-bottom: 50px;
+    }
+
+    .footer > *:last-child {
+        padding-bottom: 0px;
+    }
+
+    .footer > .footer__text{
+        text-align: center;
+    }
+
 }
 
 .footer__text {

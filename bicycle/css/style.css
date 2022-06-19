@@ -486,6 +486,26 @@ select {
           justify-content: space-between;
 }
 
+@media (max-width: 780px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer > * {
+    padding-bottom: 50px;
+  }
+
+  .footer > *:last-child {
+    padding-bottom: 0px;
+  }
+
+  .footer > .footer__text {
+    text-align: center;
+  }
+}
 .footer__text > *:nth-child(n+1) {
   font-size: 13.9px;
   font-weight: 400;
