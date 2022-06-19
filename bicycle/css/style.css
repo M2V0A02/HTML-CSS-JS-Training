@@ -9,8 +9,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -21,8 +21,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -41,8 +41,8 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -88,9 +88,7 @@ select {
   background-repeat: round;
   height: 800px;
   width: 100%;
-  padding: 40px 0 0 0;
 }
-
 .menu__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,17 +96,10 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 40px 0 0 0;
 }
-
-.menu__logo {
-  position: absolute;
-}
-
 .menu__item {
   position: relative;
-}
-
-.menu__row .menu__item {
   margin: auto 35px;
   width: 100px;
   font-family: Lato;
@@ -118,6 +109,79 @@ select {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #4d4959;
+}
+.menu__logo {
+  width: 170px;
+}
+.menu__logo img {
+  margin: 0 auto 0 auto;
+}
+@media (max-width: 790px) {
+  .menu__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .menu__logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 50px 0;
+    position: relative;
+    height: 94px;
+    width: auto;
+  }
+  .menu__logo > img {
+    position: absolute;
+  }
+  .menu__item {
+    display: none;
+    text-align: center;
+    padding: 0 0 50px 0;
+    font-size: 24px;
+    width: auto;
+    color: white;
+  }
+  .menu__burger {
+    width: 30px;
+    position: relative;
+    background-color: black;
+    height: 5px;
+    margin: 0 25px 0 auto;
+  }
+  .menu__burger::after {
+    content: "";
+    width: 30px;
+    position: absolute;
+    background-color: inherit;
+    height: 5px;
+    top: -8px;
+    left: 0;
+  }
+  .menu__burger::before {
+    content: "";
+    width: 30px;
+    position: absolute;
+    background-color: inherit;
+    height: 5px;
+    top: 8px;
+    left: 0;
+  }
+  .menu__row.menu__active .menu__item {
+    display: inline-block;
+  }
 }
 
 .about-us__body {
