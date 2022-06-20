@@ -83,6 +83,42 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@-webkit-keyframes menu-expansion {
+  from {
+    height: 150px;
+    visibility: hidden;
+  }
+  to {
+    height: 500px;
+    visibility: visible;
+  }
+}
+@keyframes menu-expansion {
+  from {
+    height: 150px;
+    visibility: hidden;
+  }
+  to {
+    height: 500px;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes menu-collapse {
+  from {
+    height: 500px;
+  }
+  to {
+    height: 150px;
+  }
+}
+@keyframes menu-collapse {
+  from {
+    height: 500px;
+  }
+  to {
+    height: 150px;
+  }
+}
 .menu {
   background: url("../img/menu_background.png");
   background-repeat: round;
@@ -118,6 +154,8 @@ select {
 }
 @media (max-width: 780px) {
   .menu__row {
+    -webkit-animation: menu-collapse 1s cubic-bezier(0, 0.98, 0.72, 0.5) forwards;
+            animation: menu-collapse 1s cubic-bezier(0, 0.98, 0.72, 0.5) forwards;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -181,6 +219,10 @@ select {
   }
   .menu__row.menu__active .menu__item {
     display: inline-block;
+  }
+  .menu .menu__row.menu__active {
+    -webkit-animation: menu-expansion 2s cubic-bezier(0, 0.98, 0.72, 0.5) forwards;
+            animation: menu-expansion 2s cubic-bezier(0, 0.98, 0.72, 0.5) forwards;
   }
 }
 
