@@ -1,0 +1,26 @@
+.content__circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+}
+
+
+.circle{
+    animation: white-circle 1s alternate ease-in infinite;
+    width: 250px;
+    height: 250px;
+    background: red;
+    position: relative;
+}
+
+@keyframes white-circle{
+    from{
+        margin: 0;
+    }
+    to{
+        margin: 250px;
+    }
+}
