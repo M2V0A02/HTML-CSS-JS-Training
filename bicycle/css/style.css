@@ -401,19 +401,33 @@ select {
   position: relative;
 }
 
-.show__cell_green:hover::before {
+.show__cell_green::before {
   position: absolute;
-  display: -ms-grid;
-  display: grid;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   content: "SHOP NOW";
   color: white;
   width: 100%;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: cubic-bezier(0.62, 1.51, 0.99, 0.94);
+          transition-timing-function: cubic-bezier(0.62, 1.51, 0.99, 0.94);
+  z-index: -1;
+}
+
+.show__cell_green:hover::before {
+  display: -ms-grid;
+  display: grid;
   background: url("../img/bike.png") 50% calc(50% - 30px) no-repeat, rgba(40, 126, 15, 0.8);
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 0;
 }
 
 .show__grid {
