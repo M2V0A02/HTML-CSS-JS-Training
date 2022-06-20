@@ -1,0 +1,28 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 30px;
+    height: 150px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    top: 0;
+    position: relative;
+}
+
+.button_1{
+    color: #fff;
+    background-color: #5e5373;
+    box-shadow: 0 5px 0 #3c354a;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(cubic-bezier(1,2,1,-1.5));
+}
+
+.button_1:hover{
+    
+    box-shadow: 0 3 px 0 #3c354a;
+    background-color: #18b5a4;
+}
