@@ -82,3 +82,35 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 100px;
+}
+.header__burger {
+  width: 24px;
+  height: 4px;
+  background-color: #342e2e;
+  margin: auto 0;
+  position: relative;
+}
+.header__burger::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+}
+.header__burger::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+}

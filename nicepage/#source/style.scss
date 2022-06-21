@@ -1,1 +1,236 @@
 @import "normalize.scss";
+.container {
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding:25px 100px; 
+
+		&__logo {
+		}
+
+		&__burger {
+            width: 24px;
+            height: 4px;
+            background-color: #342e2e;
+            margin: auto 0;
+            position: relative;
+		}
+
+        &__burger::after {
+            content: "";
+            position: absolute;
+            top: -9px;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+		}
+        &__burger::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+		}
+}
+.hi {
+
+		&__body {
+		}
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+}
+.profile {
+
+		&__body {
+		}
+
+		&__header {
+		}
+}
+.row {
+}
+.item-profile {
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__image {
+		}
+
+		&__social-media {
+		}
+}
+.text {
+}
+.idea {
+
+		&__body {
+		}
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+}
+.capabilities {
+
+		&__body {
+		}
+
+		&__header {
+		}
+
+		&__text {
+		}
+}
+.item-capabilities {
+
+		&__header {
+		}
+
+		&__ul {
+		}
+
+		&__li {
+		}
+}
+.spanish {
+
+		&__body {
+		}
+
+		&__text {
+		}
+}
+.column {
+}
+.item-sample {
+
+		&__logo {
+		}
+
+		&__headline {
+		}
+
+		&__text {
+		}
+}
+.branding {
+
+		&__body {
+		}
+
+		&__row {
+		}
+}
+.item-branding {
+
+		&__count {
+		}
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__learn-more {
+		}
+}
+.mockup {
+
+		&__body {
+		}
+}
+.item-mockup {
+
+		&__img {
+		}
+
+		&__text {
+		}
+}
+.mockup-more {
+}
+.brands {
+
+		&__body {
+		}
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+}
+.brands-grid {
+
+		&__img {
+		}
+}
+.get-in-touch {
+
+		&__body {
+		}
+
+		&__text {
+		}
+
+		&__input {
+		}
+
+		&__textarea {
+		}
+
+		&__button {
+		}
+}
+.get-in-touch-item {
+
+		&__header {
+		}
+
+		&__text {
+		}
+
+		&__social-media {
+		}
+
+		&__header-2 {
+		}
+
+		&__ul {
+		}
+}
+.get-in-touch-form {
+}
+.footer {
+
+		&__body {
+		}
+
+		&__text {
+		}
+
+		&__copylink {
+		}
+}
