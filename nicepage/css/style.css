@@ -85,6 +85,28 @@ select {
 }
 * {
   font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.image-from_a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headline {
+  font-size: 40px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
 
 .header {
@@ -157,9 +179,6 @@ select {
 .hi__image-from_a {
   color: black;
   font-weight: 700;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  border-bottom: 1px solid;
 }
 .hi__button {
   width: 237px;
@@ -170,4 +189,77 @@ select {
   padding: 10px 0;
   font-weight: 800;
   margin-top: 30px;
+}
+
+.profile__body {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 80%;
+}
+.profile__subheadline {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+.item-profile {
+  width: 100%;
+  margin-right: 25px;
+}
+.item-profile__header {
+  font-family: "Oswald";
+  font-size: 25px;
+}
+.item-profile__text {
+  margin-top: 20px;
+}
+.item-profile__text_justify {
+  text-align: justify;
+  padding-right: 15px;
+}
+.item-profile__text_line-height-2 {
+  line-height: 2;
+}
+.item-profile__image-by {
+  margin-top: 20px;
+  color: #555c66;
+}
+.item-profile__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.item-profile__image img {
+  text-align: center;
+  margin: 0 auto;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+}
+.item-profile__text_bold {
+  font-weight: 700;
+}
+.item-profile__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.item-profile__social-media > * {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.item-profile:last-child {
+  margin-right: 0;
 }
