@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -82,6 +83,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+* {
+  font-family: "Open Sans";
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,4 +118,56 @@ select {
   width: inherit;
   height: inherit;
   background-color: inherit;
+}
+
+.hi {
+  background: url("../img/author.jpg") 20% 0%, url("../img/hi-fond.jpg");
+  background-size: 500px auto;
+  background-repeat: no-repeat, repeat;
+  height: 552px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hi__body {
+  margin: 100px 25px 0 55%;
+  height: 492px;
+  width: 437px;
+}
+.hi__header {
+  font-size: 4.0625rem;
+  font-family: "Oswald";
+  letter-spacing: normal;
+  padding: 10px 0 10px 15px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hi__text {
+  line-height: 1;
+  padding: 10px 0;
+  font-family: "Montserrat";
+  font-size: 46px;
+}
+.hi__image-from {
+  font-size: 16px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.hi__image-from_a {
+  color: black;
+  font-weight: 700;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  border-bottom: 1px solid;
+}
+.hi__button {
+  width: 237px;
+  font-size: 16px;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px 0;
+  font-weight: 800;
+  margin-top: 30px;
 }
