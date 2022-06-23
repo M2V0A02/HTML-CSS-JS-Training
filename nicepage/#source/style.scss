@@ -1,11 +1,22 @@
 @import "normalize.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;500;700&display=swap');
 *{
 	font-family: "Open Sans";
-	font-size: 14px;
+	font-size: 16px;
 }
 
-.image-from_a{
+.button-read-more{
+	width: 237px;
+	font-size: 16px;
+	background-color: white;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding: 10px 0;
+	font-weight: 800;
+	margin-top: 30px;
+}
+
+a{
 	text-decoration-line: none;
     border-bottom: 1px solid;
 	color:inherit;
@@ -22,12 +33,18 @@
 	text-align: center;
 }
 
-.container {
+.container > * > *{
+	max-width: 1140px;
+	margin:0 auto;
 }
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding:25px 100px; 
+     
+		&__body{
+			display: flex;
+		justify-content: space-between;
+		padding:25px 100px;
+		}
 
 		&__logo {
 		}
@@ -98,14 +115,7 @@
 		}
 
 		&__button {
-			width: 237px;
-			font-size: 16px;
-			background-color: white;
-			text-transform: uppercase;
-			letter-spacing: 4px;
-			padding: 10px 0;
-			font-weight: 800;
-			margin-top: 30px;
+			
 		}
 }
 .profile {
@@ -185,40 +195,100 @@
 
 .text {
 }
+
 .idea {
+	background: url("../img/hi-fond.jpg");
+	&__body {
+		padding: 30px 0;
+	}
 
-		&__body {
-		}
+	&__row{
+		justify-content: center;
+	}
 
-		&__header {
-		}
+	&__item {
+		
+	}
 
-		&__text {
-		}
+	&__item:first-child {
+		width: 260px;
+	}
 
-		&__button {
-		}
+	&__header {
+		text-align: center;
+	}
+
+	&__subheadline {
+		text-align: center;
+		font-family: 'Oswald';
+		font-size: 20px;
+		font-weight: 300;
+		margin-top:30px;
+	}
+
+	&__text {
+		margin-top:30px;
+		text-align: center;
+	}
+
+	&__button {
+		margin-top:30px;
+		width: 240px;
+		margin:30px auto;
+		text-align: center;
+	}
+
+	&__img {
+		background: url("../img/idea.jpg");
+		background-size: cover;
+		height: 100%;
+		width: 300px;
+	}
 }
+
+
 .capabilities {
 
 		&__body {
+			margin:50px auto;
 		}
 
 		&__header {
 		}
 
 		&__text {
+			color:#111;
+			max-width: 675px;
+			text-align: center;
+			margin: 20px auto;
 		}
 }
 .item-capabilities {
-
+		width: 100%;
+		background-color: rgb(242, 242, 242);
+		padding: 25px 15px 50px 20px;
+		margin-right: 15px;
 		&__header {
+			font-size: 24px;
+			font-family: "Oswald";
+			font-weight: 500;
+			margin-bottom: 20px;
 		}
 
 		&__ul {
 		}
 
 		&__li {
+			font-size: 20px;
+		}
+
+		&__li::before {
+			content: "---";
+			color: #111;
+			letter-spacing: -2px;
+			display: inline-block;
+			width: 25px;
+			height: 30px;
 		}
 }
 .spanish {
