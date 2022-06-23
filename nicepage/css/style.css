@@ -470,3 +470,10 @@ a {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.mockup {
+  height: 1050px;
+}
+.mockup__body {
+  max-width: 950px;
+}

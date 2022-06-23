@@ -414,8 +414,9 @@ a{
 		}
 }
 .mockup {
-
+	height: 1050px;
 		&__body {
+			max-width: 950px;
 		}
 }
 .item-mockup {
