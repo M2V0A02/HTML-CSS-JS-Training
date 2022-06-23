@@ -15,7 +15,10 @@
 	font-weight: 800;
 	margin-top: 30px;
 }
-
+.column {
+	display: flex;
+	flex-direction: column;
+}
 a{
 	text-decoration-line: none;
     border-bottom: 1px solid;
@@ -33,10 +36,16 @@ a{
 	text-align: center;
 }
 
+.container > *:nth-child(2n) {
+	background: url("../img/hi-fond.jpg");
+}
+
 .container > * > *{
 	max-width: 1140px;
 	margin:0 auto;
 }
+
+
 
 .header {
      
@@ -197,7 +206,6 @@ a{
 }
 
 .idea {
-	background: url("../img/hi-fond.jpg");
 	&__body {
 		padding: 30px 0;
 	}
@@ -292,24 +300,60 @@ a{
 		}
 }
 .spanish {
-
+	height: 670px;
 		&__body {
-		}
-
-		&__text {
+			margin:0;
 		}
 }
-.column {
+.spanish-item{
+	width: 100%;
+	&__img{
+		width: 100%;
+		height: 670px;
+		background: url("../img/spanish.jpg");
+		background-size: cover;
+	}
 }
 .item-sample {
-
+	&:first-child{
+		padding-top: 50px;
+	}
+	display: grid;
+	grid-template-columns: 110px 1fr;
+	padding-top: 25px;
 		&__logo {
+			height: 65px;
+			width: 65px;
+			background-color: white;
+			border: 1px solid black;
+			border-radius: 50%;
+			padding:15px;
+			grid-row-start: span 2;
+			& img{
+				width: 31px;
+				margin: auto;
+			}
+			&_idea{
+				transform: matrix(-1, 0, 0, 1, 0, 0);
+			}
 		}
 
 		&__headline {
+			font-weight: 700;
+			font-size: 20px;
+			margin-bottom: 15px;
+			font-family: "Oswald";
 		}
 
 		&__text {
+			width: 280px;
+		}
+
+		&__text_copyright{
+			text-align: end;
+			margin-top: auto;
+			width: 410px;
+			margin-bottom: 50px;
 		}
 }
 .branding {
