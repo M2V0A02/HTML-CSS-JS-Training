@@ -414,3 +414,59 @@ a {
   width: 410px;
   margin-bottom: 50px;
 }
+
+.branding {
+  background: url("../img/branding.jpg");
+  background-size: cover;
+}
+.branding__body {
+  height: 835px;
+  padding-top: 338px;
+}
+.branding__row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.branding__copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+.branding__copyright a {
+  border-bottom: 2px solid #fdd460;
+}
+
+.item-branding {
+  background-color: #fdd460;
+  margin-left: 25px;
+  height: 380px;
+  padding: 25px 20px;
+  max-width: 215px;
+}
+.item-branding > * {
+  margin-bottom: 20px;
+}
+.item-branding__count {
+  font-size: 48px;
+  font-family: "OSWALD";
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+  padding-left: 13px;
+  background: white;
+}
+.item-branding__header {
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+.item-branding__text {
+  font-size: 14px;
+  font-style: italic;
+}
+.item-branding__learn-more {
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

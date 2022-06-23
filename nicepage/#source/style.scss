@@ -357,25 +357,60 @@ a{
 		}
 }
 .branding {
-
+	background: url("../img/branding.jpg");
+	background-size: cover;
 		&__body {
+			height: 835px;
+			padding-top: 338px;
 		}
 
 		&__row {
+			justify-content: center;
+		}
+
+		&__copyright{
+			text-align: center;
+			margin-top: 30px;
+			& a {
+				border-bottom: 2px solid #fdd460;
+			}
 		}
 }
 .item-branding {
-
+	background-color: #fdd460;
+	margin-left: 25px;
+	height: 380px;
+	padding: 25px 20px;
+	max-width: 215px;
+	& > * {
+		margin-bottom: 20px;
+	}
 		&__count {
+			font-size: 48px;
+			font-family: "OSWALD";
+			border: 2px solid black;
+			border-radius: 50%;
+			width: 77px;
+			height: 77px;
+			padding-left: 13px;
+    		background: white;
 		}
 
 		&__header {
+			font-size: 20px;
+			font-family: "Oswald";
+			font-weight: 700;
 		}
 
 		&__text {
+			font-size: 14px;
+			font-style: italic;
 		}
 
 		&__learn-more {
+			letter-spacing: 1px;
+			font-weight: 700;
+			text-transform: uppercase;
 		}
 }
 .mockup {
