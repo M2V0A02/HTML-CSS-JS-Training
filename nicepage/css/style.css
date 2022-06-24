@@ -86,6 +86,7 @@ select {
 * {
   font-family: "Open Sans";
   font-size: 16px;
+  color: #111;
 }
 
 .button-read-more {
@@ -143,6 +144,19 @@ a {
 .container > * > * {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media > * {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
 }
 
 .header__body {
@@ -273,18 +287,6 @@ a {
 .item-profile__text_bold {
   font-weight: 700;
 }
-.item-profile__social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-}
-.item-profile__social-media > * {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
 .item-profile:last-child {
   margin-right: 0;
 }
@@ -589,4 +591,59 @@ a {
 .brands-grid__img img {
   height: 100%;
   width: 100%;
+}
+
+.get-in-touch__body {
+  padding: 50px 0;
+}
+.get-in-touch-item {
+  max-width: 380px;
+  padding: 25px 30px;
+}
+.get-in-touch-item > * {
+  margin-bottom: 20px;
+}
+.get-in-touch-item__header {
+  font-size: 36px;
+  color: #111;
+  text-align: left;
+}
+.get-in-touch-item__text {
+  line-height: 32px;
+}
+.get-in-touch-item__text_bold {
+  font-weight: 700;
+}
+.get-in-touch-item__text_small {
+  max-width: 210px;
+}
+.get-in-touch-item__ul-li {
+  background: url("../img/check.svg") no-repeat 0 0;
+  background-size: 10px 10px;
+  background-position: 0 6px;
+  padding-left: 40px;
+}
+.get-in-touch-item__header-2 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+}
+.get-in-touch-form > * {
+  margin-bottom: 10px;
+}
+.get-in-touch-form__input {
+  width: 100%;
+  padding: 10px;
+}
+.get-in-touch-form__textarea {
+  width: 100%;
+  height: 120px;
+}
+.get-in-touch-form__button {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
 }
