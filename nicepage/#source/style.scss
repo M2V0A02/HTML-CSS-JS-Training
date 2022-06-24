@@ -417,7 +417,28 @@ a{
 	height: 1050px;
 		&__body {
 			max-width: 950px;
+			position: relative;
+			height: 100%;
+			padding:50px 0;
 		}
+
+		&__background {
+			background: url("../img/mockup-design.jpg");
+			background-size: cover;
+			top: 117px;
+    		left: -33px;
+			position: absolute;
+			max-width: 1060px;
+			max-height: 1050px;
+			width: calc(100% - 100px);
+			height: 50%;
+		}
+
+		&__svg{
+			position: absolute;
+			fill: white;
+		}
+
 }
 .item-mockup {
 
