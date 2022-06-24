@@ -122,6 +122,12 @@ a {
   display: flex;
 }
 
+.row_justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .headline {
   font-size: 40px;
   font-family: "Oswald";
@@ -472,26 +478,74 @@ a {
 }
 
 .mockup {
-  height: 1050px;
+  z-index: 0;
 }
 .mockup__body {
-  max-width: 950px;
+  z-index: 0;
   position: relative;
   height: 100%;
-  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .mockup__background {
+  z-index: -1;
   background: url("../img/mockup-design.jpg");
-  background-size: cover;
-  top: 117px;
-  left: -33px;
+  background-size: contain;
+  top: 137px;
   position: absolute;
   max-width: 1060px;
   max-height: 1050px;
-  width: calc(100% - 100px);
-  height: 50%;
+  width: 936px;
+  height: 624px;
 }
 .mockup__svg {
+  top: 20px;
+  width: 1060px;
+  height: 1050px;
+  z-index: -2;
   position: absolute;
   fill: white;
+}
+.mockup__row {
+  z-index: 1;
+  margin: 685px 0 0 330px;
+}
+.mockup__copyright {
+  margin: 20px 0 20px 330px;
+}
+.mockup__copyright a {
+  font-weight: 700;
+}
+
+.item-mockup {
+  max-width: 280px;
+  padding: 35px 20px;
+  background-color: white;
+  margin-right: 20px;
+}
+.item-mockup__img {
+  width: 220px;
+  height: 180px;
+}
+.item-mockup__text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.item-mockup__more {
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.item-mockup__more a {
+  border-bottom: 2px solid #fdd460;
 }

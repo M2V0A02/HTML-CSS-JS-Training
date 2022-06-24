@@ -28,6 +28,10 @@ a{
 	display: flex;
 }
 
+.row_justify-center{
+	justify-content: center;
+}
+
 .headline{
 	font-size: 40px;
 	font-family: "Oswald";
@@ -414,42 +418,80 @@ a{
 		}
 }
 .mockup {
-	height: 1050px;
+	z-index: 0;
 		&__body {
-			max-width: 950px;
+			z-index: 0;
 			position: relative;
 			height: 100%;
-			padding:50px 0;
+			
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
 		}
 
 		&__background {
+			z-index: -1;
 			background: url("../img/mockup-design.jpg");
-			background-size: cover;
-			top: 117px;
-    		left: -33px;
+			background-size: contain;
+			top: 137px;
 			position: absolute;
 			max-width: 1060px;
 			max-height: 1050px;
-			width: calc(100% - 100px);
-			height: 50%;
+			width: 936px;
+			height: 624px;
 		}
 
 		&__svg{
+			top:20px;
+			width: 1060px;
+			height: 1050px;
+			z-index: -2;
 			position: absolute;
 			fill: white;
 		}
 
+		&__row{
+			z-index: 1;
+			margin: 685px 0 0 330px;
+		}
+
+		&__copyright{
+			margin: 20px 0 20px 330px;
+		}
+
+		&__copyright a{
+			font-weight: 700;
+		}
 }
 .item-mockup {
-
+	max-width: 280px;
+	padding: 35px 20px;
+	background-color: white;
+	margin-right: 20px;
 		&__img {
+			width: 220px;
+			height: 180px;
 		}
 
 		&__text {
+			margin-top:20px;
+			font-size: 18px;
+		}
+
+		&__more{
+			text-transform: uppercase;
+			
+			color: #111;
+			text-align: center;
+			font-weight: 700;
+			margin-top:20px;
+
+			& a{
+				border-bottom:2px solid #fdd460;
+			}
 		}
 }
-.mockup-more {
-}
+
 .brands {
 
 		&__body {
