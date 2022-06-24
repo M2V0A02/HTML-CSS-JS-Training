@@ -549,3 +549,44 @@ a {
 .item-mockup__more a {
   border-bottom: 2px solid #fdd460;
 }
+
+.brands__body {
+  position: relative;
+  margin-bottom: 75px;
+}
+.brands__body > * {
+  margin-top: 25px;
+}
+.brands__block {
+  position: absolute;
+  width: 318px;
+  height: 515px;
+  background-color: #fdd460;
+  left: 713px;
+  top: 0;
+  z-index: -1;
+}
+.brands__header {
+  font-family: "Oswald";
+  width: 604px;
+  font-size: 64px;
+  color: #111;
+}
+.brands__text {
+  width: 565px;
+}
+.brands-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  width: 853px;
+}
+.brands-grid__img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.brands-grid__img img {
+  height: 100%;
+  width: 100%;
+}

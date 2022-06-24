@@ -493,22 +493,48 @@ a{
 }
 
 .brands {
-
 		&__body {
+			position: relative;
+			margin-bottom: 75px;
+			& > * {
+				margin-top: 25px;
+			}
 		}
-
+		&__block{
+			position: absolute;
+			width: 318px;
+			height: 515px;
+			background-color:#fdd460;
+			left: 713px;
+			top:0;
+			z-index: -1;
+		}
 		&__header {
+			font-family: 'Oswald';
+			width: 604px;
+			font-size: 64px;
+			color: #111;
 		}
 
 		&__text {
+			width: 565px;
 		}
 
 		&__button {
 		}
 }
 .brands-grid {
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 853px;
 		&__img {
+			margin-left: 10px;
+			margin-bottom: 10px;
+
+			& img{
+				height: 100%;
+				width: 100%;
+			}
 		}
 }
 .get-in-touch {
