@@ -193,18 +193,24 @@ a {
 }
 
 .hi {
-  background: url("../img/author.jpg") 20% 0%, url("../img/hi-fond.jpg");
-  background-size: 500px auto;
-  background-repeat: no-repeat, repeat;
   height: 552px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 0 0 0;
+}
+.hi__row {
+  height: 100%;
+}
+.hi__img {
+  background: url("../img/author.jpg") no-repeat;
+  max-width: 559px;
+  width: 513px;
+  height: 100%;
+  background-size: cover;
 }
 .hi__body {
-  margin: 100px 25px 0 55%;
-  height: 492px;
-  width: 437px;
+  margin: 0px auto 0 auto;
 }
 .hi__header {
   font-size: 4.0625rem;
@@ -214,6 +220,10 @@ a {
   background-color: white;
   text-transform: uppercase;
   font-weight: 700;
+}
+.hi__content {
+  max-width: 500px;
+  margin: auto 0;
 }
 .hi__text {
   line-height: 1;
@@ -234,6 +244,7 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   width: 80%;
+  padding-top: 20px;
 }
 .profile__subheadline {
   text-align: center;
