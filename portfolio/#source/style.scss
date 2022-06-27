@@ -1,32 +1,135 @@
 @import "normalize.scss";
 
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+* {
+    font-family: 'Proxima Nova Rg';
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
 .header {
 
     &__body {
+        background: linear-gradient(to right,#232B39 40%,#000000 );
+        padding:25px 40px 100px 15px
     }
 
     &__nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__content {
+        margin: 120px 0 0 0;
+
+        & > * {
+            margin-bottom: 25px;
+        }
     }
 
     &__headline {
-
+        font-size: 35px;
+        color:white;
+        line-height: 1;
+        font-weight: 600;
         &_red {
+            font-size: 30px;
+            color:#BF3D37;
+            font-weight: normal;
         }
     }
 
     &__text {
+        font-weight: 600;
+        font-size: 30px;
+        color: white;
+    }
+
+    &__img{
+        filter:brightness(0.45);
+        background: url("../imgs/jellyfish.png") no-repeat right;
+        flex-grow: 1;
+        margin-left: auto;
+        height: 460px;
     }
 }
 .logo {
+    width: 90px;
+    height: 90px;
 }
 .header-menu {
-
+    display: flex;
     &__item {
+        color:white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left:40px;
+    }
+
+}
+
+.vertical-line{
+    margin-right:calc(50% - 133px);
+    float:right;
+    animation: vertical-line 3s forwards;
+    border: none;
+    border-bottom: #000000 3px solid;
+    &_red{
+        border-bottom: 3px solid #BF3D37;
+        
     }
 }
+
+@keyframes vertical-line{
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 266px;
+    }
+}
+
+.scroll-down{
+    display: flex;
+    justify-content: center;
+}
+
 .my-name {
 
     &__body {
