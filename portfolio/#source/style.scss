@@ -133,23 +133,79 @@
 .my-name {
 
     &__body {
+        padding:25px 15px 0 30px;
     }
 
     &__photo {
+        margin-top:50px;
+        border:3px solid #000;
+        background:url("../imgs/dotted.png");
+        width: 426px;
+        height: 647px;
+        & img{
+            transform: translate(-15px, -15px);
+        }
+    }
+
+    &__row{
+        justify-content: center;
+
+        & > *{
+            margin-right: 100px;
+        }
+
+        & > *:last-child{
+            margin-right: 0px;
+        }
     }
 
     &__content {
+        max-width: 570px;
     }
 
     &__header {
+        font-size: 24px;
+        font-weight: 400;
     }
 
     &__text {
+        & > p {
+            margin-top: 12px;
+            line-height: 16px;
+        }
     }
 
     &__button {
+        background-color: #BF3D37;
+        color: white;
+        padding:15px 50px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 12px;
+        font-weight: 400;
+        margin-top: 20px;
+        font-weight: 600;
     }
 }
+
+.horizontal-line{
+    height: 100px;
+    border: none;
+    border-left:3px solid #BF3D37;
+    animation: horizontal-line 3s forwards;
+    margin:0px 0 30px 100px;
+}
+
+@keyframes horizontal-line{
+    0%{
+        height:0px;
+
+    }
+    100%{
+
+    }
+}
+
 .services {
 
     &__body {
