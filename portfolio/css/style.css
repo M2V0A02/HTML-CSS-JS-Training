@@ -339,3 +339,60 @@ select {
 .service-item__text {
   font-size: 20px;
 }
+
+.portfolio__text {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 20px 0;
+}
+
+.portfolio-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px 0 0 20px;
+}
+.portfolio-grid__case {
+  margin: 0 20px 20px 0;
+  height: 200px;
+  position: relative;
+}
+.portfolio-grid__case img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 10px 10px;
+     object-position: 10px 10px;
+  height: 100%;
+}
+.portfolio-grid__case img:hover {
+  margin-top: 10px;
+  -o-object-position: 10px 0;
+     object-position: 10px 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-transition: 1s -webkit-filter;
+  transition: 1s -webkit-filter;
+  transition: 1s filter;
+  transition: 1s filter, 1s -webkit-filter;
+  -webkit-filter: brightness(0.55);
+          filter: brightness(0.55);
+  position: relative;
+}
+.portfolio-grid__case:hover .portfolio-grid__figcaption {
+  display: block;
+  left: 45px;
+  top: 165px;
+  color: white;
+  text-transform: uppercase;
+  border-left: white 4px solid;
+  padding-left: 15px;
+  line-height: 1.25;
+  font-size: 12px;
+}
+.portfolio-grid__figcaption {
+  position: absolute;
+  display: none;
+}

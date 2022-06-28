@@ -269,6 +269,11 @@
     }
 
     &__text {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 20px 0 20px 0;
     }
 }
 .porfolio {
@@ -277,9 +282,47 @@
     }
 }
 .portfolio-grid {
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:40px 0 0 20px;
     &__case {
+        margin:0 20px 20px 0;
+        height: 200px;
+        position: relative;
+        & img{
+            object-fit: contain;
+            object-position: 10px 10px;
+            height: 100%;
+        }
+
+        & img:hover{
+            margin-top: 10px;
+            object-position: 10px 0;
+            object-fit: fill;
+            transition: 1s filter;
+            filter: brightness(0.55);
+            position: relative;
+
+        }
+
+        &:hover .portfolio-grid__figcaption{
+            display: block;
+            left:45px;
+            top:165px;
+            color: white;
+            text-transform: uppercase;
+            border-left: white 4px solid;
+            padding-left: 15px;
+            line-height: 1.25;
+            font-size: 12px;
+        }
     }
+
+    &__figcaption{
+        position: absolute;
+        display: none;
+    }
+
 }
 .footer {
 
