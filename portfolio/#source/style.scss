@@ -202,6 +202,10 @@
     &_center{
         margin-left:calc(50% - 2px);
     }
+
+    &_contact{
+        margin:0 0 15px 205px;
+    }
 }
 
 @keyframes horizontal-line{
@@ -325,41 +329,96 @@
 
 }
 .footer {
-
+    background: linear-gradient(to right,#232B39 40%,#000000 );
     &__body {
+        padding: 35px 15px 15px 15px;
     }
 
     &__row {
     }
 
     &__headline {
-
+        font-size: 18px;
+        color: white;
+        font-weight: 400;
+        margin-top: 20px;
         &_red {
+            color:#BF3D37;
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: -10px;
         }
+    }
+
+    &__hr{
+        border: none;
+        border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
+        margin-bottom: 15px;
     }
 }
 .footer-item {
+    &:first-child{
+        margin-left: 45px;
+    }
 }
 .contact-us {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        margin-bottom: 15px;
+    }
 
     &__input {
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: white 1px solid;
+        color: #C4C4C4;
+        background: rgb(53, 59, 71);
     }
 
     &__button {
+        text-transform: uppercase;
+        padding: 12px 0;
+        text-align: center;
+        background-color: #BF3D37;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
     }
 }
 .contact {
 
     &__headline {
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        text-align: end;
+
     }
 
     &__tel {
+        font-size: 20px;
+        color: white;
+        text-align: end;
+        margin-top: 40px;
     }
 
     &__mail {
+        font-size: 20px;
+        color: white;
+        text-align: end;
+        margin-top: 20px;
     }
 
     &__text {
+        font-size: 21px;
+        color: white;
+        text-align: end;
+        margin-top: 30px;
     }
 }
 .social-media {
@@ -374,10 +433,13 @@
     }
 }
 .copyright {
-
+    text-align: center;
+    font-size: 14px;
+    color: #E5E5E5;
     &__text {
-
+        
         &_red {
+            color:#BF3D37
         }
     }
 }
