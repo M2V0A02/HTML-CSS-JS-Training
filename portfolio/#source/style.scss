@@ -91,6 +91,48 @@
         margin-left: auto;
         height: 460px;
     }
+
+    @media (max-width:1150px){
+        &__img{
+            order: -1;
+            width: 100%;
+            background-position: center;
+        }
+
+        &__row{
+            flex-direction: column;
+        }
+
+        &__content{
+            text-align: center;
+        }
+    }
+
+    @media (max-width:750px){
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width:550px) {
+        &__nav{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__headline{
+            font-size: 27px;
+        }
+
+        .logo{
+            margin:0 auto;
+        }
+
+        .header-menu{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
 }
 .logo {
     width: 90px;
@@ -189,6 +231,18 @@
         font-weight: 400;
         margin-top: 20px;
         font-weight: 600;
+    }
+
+    @media (max-width:1150px){
+        &__row{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__row > *{
+            margin-right: 0px;
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -326,7 +380,13 @@
         position: absolute;
         display: none;
     }
+    @media (max-width: 900px){
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    @media (max-width: 600px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .footer {
     background: linear-gradient(to right,#232B39 40%,#000000 );
@@ -354,6 +414,26 @@
         border: none;
         border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
         margin-bottom: 15px;
+    }
+
+    @media (max-width:900px){
+        &__row{
+            flex-direction: column;
+        }
+
+        &__row  *{
+            text-align: center !important;
+        }
+
+        .horizontal-line{
+            margin:0 0 0 50%;
+        }
+
+        .footer-item {
+            &:first-child{
+                margin-left: 0px !important;
+            }
+        }
     }
 }
 .footer-item {

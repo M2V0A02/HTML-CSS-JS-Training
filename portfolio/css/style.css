@@ -166,6 +166,52 @@ select {
   margin-left: auto;
   height: 460px;
 }
+@media (max-width: 1150px) {
+  .header__img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    background-position: center;
+  }
+  .header__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__content {
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .header__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header__headline {
+    font-size: 27px;
+  }
+  .header .logo {
+    margin: 0 auto;
+  }
+  .header .header-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .logo {
   width: 90px;
@@ -268,6 +314,21 @@ select {
   font-weight: 400;
   margin-top: 20px;
   font-weight: 600;
+}
+@media (max-width: 1150px) {
+  .my-name__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-name__row > * {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
 }
 
 .horizontal-line {
@@ -399,6 +460,18 @@ select {
   position: absolute;
   display: none;
 }
+@media (max-width: 900px) {
+  .portfolio-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #232B39), to(#000000));
@@ -423,6 +496,23 @@ select {
   border: none;
   border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
   margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__row * {
+    text-align: center !important;
+  }
+  .footer .horizontal-line {
+    margin: 0 0 0 50%;
+  }
+  .footer .footer-item:first-child {
+    margin-left: 0px !important;
+  }
 }
 
 .footer-item:first-child {
