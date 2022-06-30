@@ -1,35 +1,106 @@
 @import "normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-.container {
+body{
+    background: #333;
+    color: #fff;
+    font-family: Roboto;
+    height: 100%;
+    font-size: calc(14rem / 16);
 }
 
-.do-you-like {
+.container {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
 
+
+
+.example {
+    padding:0 15px;
+    margin:0 auto;
+    max-width: 75rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        background: url("../img/background.svg");
+        position: absolute;
+        right:0;
+        left:70%;
+        width: 14.57%;
+        padding-top: 22.95%;
+
+        top:20%;
+
+        transform: translate(50%, -50%);
+    }
+}
+
+
+.do-you-like {
+    margin: 0 0 25px 0;
+    max-width: 46.875rem;
 		&__h2 {
+            color: #a989c7;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            font-size: 0.875rem;
+
+            line-height: 170%;
+
+            margin: 0 0 1.07em 0;
 		}
 
 		&__h1 {
+            color: #93b482;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            font-size: 2.625rem;
+            line-height: 1.19;
+            margin: 0 0 0.38em 0px;
+
+            letter-spacing: 0.12em;
 		}
 
 		&__text {
+            font-size: 0.875rem;
+            
+            line-height: 1.5;
 		}
 }
-
-.content {
+.row-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.125rem, 24rem));
+    column-gap: 23px;
+    row-gap: 24px;
+    margin:0 -12px;
+    
 }
-
-.row {
+.content-item {
     display: flex;
-}
-
-.item-content {
-
+    padding:0px 12px;
+    flex: 1 1 33.33%;
+    min-width: 18rem;
 		&__img {
+            flex: 0 0 63px;
+		}
+
+		&__body {
 		}
 
 		&__headline {
+            color: #f2726f;
+            font-weight: 900;
+            font-size: 1.375rem;
+            margin:0px 0px 0.45em 0px;
 		}
 
 		&__text {
 		}
+}
+.div {
 }
