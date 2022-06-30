@@ -1,0 +1,8 @@
+.row{
+    display: flex;
+}
+
+.row > *{
+    width: 35%;
+    display: inline-block;
+}
