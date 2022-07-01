@@ -1,3 +1,4 @@
 $(function(){
-    alert($('img').length);
+    let mainText = $('.mainText').remove();
+    $('body').append(mainText);
 });
