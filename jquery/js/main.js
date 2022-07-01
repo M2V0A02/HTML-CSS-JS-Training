@@ -24,5 +24,14 @@ $(function(){
     $('.arrowDown').click(function(){
         var clone = $(this).clone();
         $(this).after(clone);
-    })
+    });
+
+    var link = $('menu li a');
+
+    link.hover(function() {
+            $(this).addClass('border');
+        }, function() {
+            $(this).removeClass('border');
+        }
+    );
 });
