@@ -7,8 +7,10 @@ $(function(){
     $('img, a').mouseout(function(){
         console.log('mouserOut');
     });
-    $('img, a').click(function(){
+    $('img, a').click(function(e){
         console.log('mouserclick');
+        console.log(e.pageX + " " + e.pageY);
+        console.log(e.altKey + " " + e.ctrlKey + " " + e.shiftKey + " " + e.target);
     });
     $('img, a').mousemove(function(){
         console.log('mousermove');
