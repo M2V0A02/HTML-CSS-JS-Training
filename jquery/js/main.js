@@ -1,4 +1,6 @@
 $(function(){
+    
+    document.getElementsByClassName('mainText')[0].onclick = function (){ alert('123');};
     $('img, a').mouseover(function(){
         console.log('mouserOver');
     });
@@ -15,5 +17,4 @@ $(function(){
         console.log('mouserUp');
     })
 
-    scroll(console.log('qwe'));
 });
