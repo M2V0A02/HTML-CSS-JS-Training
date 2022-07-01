@@ -5,3 +5,7 @@ $('nav menu');
 $('.recieve .icons');
 $('.icons div');
 $('div + p');
+$('img[height="150px"]');
+$('img[src^="img/"');
+$('img[src$=".png"');
+$('a[href*="#"');
