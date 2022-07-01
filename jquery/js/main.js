@@ -1,4 +1,3 @@
 $(function(){
-    $("nav").hide(1000).show(1000);
-    $(".mainText").fadeOut(1000).fadeIn(1000);
+    $(".mainText").fadeTo(1000, 0.1).fadeTo(500, 1);
 });
