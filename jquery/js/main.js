@@ -1,6 +1,5 @@
 $(function(){
     
-    document.getElementsByClassName('mainText')[0].onclick = function (){ alert('123');};
     $('img, a').mouseover(function(){
         console.log('mouserOver');
     });
@@ -8,6 +7,7 @@ $(function(){
         console.log('mouserOut');
     });
     $('img, a').click(function(e){
+        e.preventDefault();
         console.log('mouserclick');
         console.log(e.pageX + " " + e.pageY);
         console.log(e.altKey + " " + e.ctrlKey + " " + e.shiftKey + " " + e.target);
