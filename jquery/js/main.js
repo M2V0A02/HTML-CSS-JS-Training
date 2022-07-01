@@ -1,19 +1,4 @@
-$('#recieve');
-$('.logo');
-$('a');
-$('nav menu');
-$('.recieve .icons');
-$('.icons div');
-$('div + p');
-$('img[height="150px"]');
-$('img[src^="img/"');
-$('img[src$=".png"');
-$('a[href*="#"');
-$('li:even');
-$('li:odd');
-$('img:not(.logo img)');
-$('li:has(a)');
-$('li:contains(test)');
-$('li:last');
-$('li:hidden');
-$('li:visibility');
+$(function(){
+    let tagP = $('.mainText > p').hide(1000, function(){alert(1);});
+    tagP.show(2000);
+});
