@@ -1,4 +1,4 @@
 $(function(){
-    let mainText = $('.mainText').remove();
-    $('body').append(mainText);
+    $('img, a').css('background', 'black');
+    $('img[alt]').css('background', 'red');
 });
