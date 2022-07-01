@@ -1,6 +1,7 @@
 $(function(){
-    $('img').addClass('img');
-    alert($('img').attr('class').split(' '));
-    $('img').toggleClass('img');
-    alert($('img').hasClass('img'));
+    $('img').css({
+        'width' : '20px',
+        'height' : '20px'
+    });
+    alert($('img').css([ "color", "font-size"])['font-size']);
 });
