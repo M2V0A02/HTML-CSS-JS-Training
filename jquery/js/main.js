@@ -1,7 +1,6 @@
 $(function(){
-    $('a').animate({
-        'font-size': "24px",
-        "color": "rgb( 20, 20, 20 )",
-        'line-height':"200%"
-    }, 3000)
+    $('.mainText').before("<span>Перед объектом </span>");
+    $('.mainText').after("<span>После объектом </span>");
+    $('.mainText').append("<span> В конце внутри</span>");
+    $('.mainText').prepend("<span> 123 </span>");
 });
