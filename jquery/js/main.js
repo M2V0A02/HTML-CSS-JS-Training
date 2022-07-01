@@ -17,4 +17,12 @@ $(function(){
         console.log('mouserUp');
     })
 
+    $(window).scroll(function(){
+        console.log('событие scroll');
+    });
+
+    $('.arrowDown').click(function(){
+        var clone = $(this).clone();
+        $(this).after(clone);
+    })
 });
