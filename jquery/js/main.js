@@ -64,4 +64,6 @@ $(function(){
             $("#select2").html("<option value='4' selected=''>disabled 4</option>")
         }
     })
+
+    $(":input").attr('disabled', 'disabled');
 });
