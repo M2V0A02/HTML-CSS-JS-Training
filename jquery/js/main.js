@@ -38,13 +38,20 @@ $(function(){
     );
 
     
-
-    $(':submit').click(function(e){
-        e.preventDefault();
-        value = "";
-        $('.form1 :input').each(function(){
-            value += $(this).val();
-        })
-        alert(value);
+    $('.form1').submit(function(e){
+       
+        if ($('.text1').val() == "") {
+            e.preventDefault();
+            alert('1 поле не введено');
+        }
     });
+
+    $(':input').focus(function(e){
+        console.log("есть фокус!");
+    });
+
+    $(':input').focusout(function(){
+        alert("фокус снят!");
+    });
+
 });
