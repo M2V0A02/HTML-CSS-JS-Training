@@ -50,8 +50,18 @@ $(function(){
         console.log("есть фокус!");
     });
 
-    $(':input').focusout(function(){
-        alert("фокус снят!");
-    });
-
+    $("#select1").change(function(e){
+        if($(this).val() == 1){
+            $("#select2").html("<option value='1' selected=''>disabled 1</option>")
+        }
+        if($(this).val() == 2){
+            $("#select2").html("<option value='1' selected=''>disabled 1</option><option value='2' selected=''>disabled 2</option>")
+        }
+        if($(this).val() == 3){
+            $("#select2").html("<option value='3' selected=''>disabled 3</option>")
+        }
+        if($(this).val() == 4){
+            $("#select2").html("<option value='4' selected=''>disabled 4</option>")
+        }
+    })
 });
