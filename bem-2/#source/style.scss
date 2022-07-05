@@ -7,6 +7,29 @@ $big-font: 40px;
 $very-big-font: 60px;
 $text-font-style: "Open Sans";
 
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.headline {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 75px;
+    display: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after{
+        content: "";
+        width: 60px;
+        height: 4px;
+        background-color: #FCBB08;
+
+    }
+}
 .header {
 
     &__top {
@@ -20,7 +43,8 @@ $text-font-style: "Open Sans";
     }
 
     &__content {
-        background: url("../img/Header-bg.png") no-repeat;
+        background: url("../img/Header-bg.png");
+        background-size: cover;
         height: 660px;
         padding: 240px 0 70px 0;
     }
@@ -89,21 +113,38 @@ $text-font-style: "Open Sans";
 .about {
 
     &__body {
+        padding: 143px 0 255px 0;
+        display: flex;
+        justify-content: center;
+
+        & > *{
+            margin-right: 133px;
+        }
+
+        & > *:last-child{
+            margin-right: 0px;
+        }
     }
 
     &__headline {
+        
     }
 
     &__content {
+        max-width: 770px;
     }
 
     &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
     }
 }
-.container {
-}
-.headline {
-}
+
+
 .expertise {
 
     &__body {
