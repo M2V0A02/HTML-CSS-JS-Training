@@ -1,3 +1,314 @@
 @import "normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
+$small-font: 12px;
+$medium-font: 14px;
+$big-font: 40px;
+$very-big-font: 60px;
+$text-font-style: "Open Sans";
+
+.header {
+
+    &__top {
+    }
+
+    &__top-body {
+        padding:26px 53px 40px 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        background: url("../img/Header-bg.png") no-repeat;
+        height: 660px;
+        padding: 240px 0 70px 0;
+    }
+
+    &__content-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content-headline {
+        font-size: 100px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__content-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FCBB08;
+        letter-spacing: 2.74286px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__content-scroll {
+        width: 20px;
+        height: 35px;
+        margin: auto auto 0 auto;
+    }
+}
+.logo {
+
+    &__link {
+    }
+
+    &__img {
+    }
+}
+.header-menu {
+    display: flex;
+    &__li {
+        text-transform: uppercase;
+        margin-right: 50px;
+        font: 700 $small-font "Raleway";
+
+        &:last-child{
+            margin-right: 0px;
+            padding:0 7px 9px 7px;
+        }
+
+        &_selected {
+            border-bottom:2px solid #FCBB08;
+        }
+    }
+
+    &__link {
+    }
+}
+.about {
+
+    &__body {
+    }
+
+    &__headline {
+    }
+
+    &__content {
+    }
+
+    &__text {
+    }
+}
+.container {
+}
+.headline {
+}
+.expertise {
+
+    &__body {
+    }
+
+    &__content {
+    }
+
+    &__text {
+    }
+}
+.horizontal-charts {
+
+    &__item {
+    }
+
+    &__line {
+    }
+
+    &__text {
+    }
+
+    &__percent {
+    }
+}
+.expertise-item {
+
+    &__img {
+    }
+
+    &__headline {
+    }
+}
+.item {
+
+    &__img {
+    }
+
+    &__headline {
+    }
+
+    &__text {
+    }
+}
+.features {
+
+    &__body {
+    }
+
+    &__img {
+    }
+
+    &__content {
+    }
+
+    &__headline {
+    }
+
+    &__text {
+    }
+}
+.portfolio {
+
+    &__body {
+    }
+
+    &__grid {
+    }
+
+    &__grid-item {
+    }
+
+    &__more-project {
+    }
+
+    &__quote {
+    }
+
+    &__quote-author {
+    }
+
+    &__video-wrapper {
+    }
+
+    &__video {
+    }
+
+    &__mertics {
+    }
+}
+.portfolio-menu {
+
+    &__item {
+    }
+}
+.metric-item {
+
+    &__number {
+    }
+
+    &__text {
+    }
+}
+.slider {
+
+    &__forward {
+    }
+
+    &__back {
+    }
+
+    &__body {
+    }
+
+    &__headline {
+    }
+
+    &__text {
+    }
+
+    &__control-panel {
+    }
+}
+.team {
+
+    &__body {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__img {
+    }
+
+    &__name {
+    }
+}
+.pricing {
+
+    &__body {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__headline {
+    }
+
+    &__price {
+    }
+
+    &__features {
+    }
+
+    &__feature {
+    }
+
+    &__button {
+    }
+}
+.contact {
+
+    &__body {
+    }
+
+    &__map {
+    }
+}
+.contact-form {
+
+    &__input {
+    }
+
+    &__textarea {
+    }
+
+    &__button {
+    }
+}
+.footer {
+
+    &__body {
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+    }
+
+    &__item {
+    }
+
+    &__text {
+    }
+
+    &__spoiler {
+    }
+
+    &__copyright {
+    }
+}
