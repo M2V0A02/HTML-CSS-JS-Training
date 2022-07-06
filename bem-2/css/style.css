@@ -102,12 +102,23 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 4px;
 }
 .headline::after {
   content: "";
   width: 60px;
   height: 4px;
   background-color: #FCBB08;
+}
+
+.text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #373A39;
 }
 
 .header__top-body {
@@ -198,11 +209,102 @@ select {
 .about__content {
   max-width: 770px;
 }
-.about__text {
+.expertise__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.expertise__content {
+  max-width: 600px;
+}
+.expertise__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.expertise__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 125px;
+}
+
+.horizontal-charts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.horizontal-charts__line {
+  width: 370px;
+  height: 2px;
+  background-color: #F0F0F0;
+  position: relative;
+  margin-bottom: 4px;
+}
+.horizontal-charts__text {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  text-transform: uppercase;
+}
+.horizontal-charts__percent {
+  position: absolute;
+}
+.horizontal-charts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.horizontal-charts > * {
+  margin-bottom: 28px;
+}
+.horizontal-charts > *:last-child {
+  margin: 0;
+}
+
+.expertise-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.expertise-item__img {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+}
+.expertise-item__content {
+  max-width: 285px;
+  margin-right: 50px;
+}
+.expertise-item__content:last-child {
+  margin-right: 0;
+}
+.expertise-item__headline {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 10px;
+  line-height: 20px;
+  letter-spacing: 4.2875px;
+  text-transform: uppercase;
+  margin: 0 0 18px 0;
+}
+.expertise-item__text {
+  color: #777777;
 }
