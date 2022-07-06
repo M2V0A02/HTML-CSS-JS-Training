@@ -263,15 +263,24 @@ $text-font-style: "Open Sans";
 .features {
 
     &__body {
+        display: flex;
+        justify-content: center;
     }
 
     &__img {
+        width: 705px;
+        height: 840px;
     }
 
     &__content {
+        margin: 103px 0 100px 132px;
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
     }
 
     &__headline {
+        margin-bottom: 75px;
     }
 
     &__text {
