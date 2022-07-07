@@ -1,5 +1,5 @@
 @import "normalize.scss";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&display=swap');
 
 $small-font: 12px;
 $medium-font: 14px;
@@ -113,7 +113,7 @@ $text-font-style: "Open Sans";
             padding:0 7px 9px 7px;
         }
 
-        &_selected {
+        &--selected {
             border-bottom:2px solid #FCBB08;
         }
     }
@@ -291,10 +291,93 @@ $text-font-style: "Open Sans";
     &__body {
     }
 
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__grid {
+        display: grid;
+        max-width: 1440px;
+        margin:120px auto 115px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        width: 100%;
+        height: 900px;
+    }
+
+    &__content-grid {
+        left:0;
+        top:0;
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-family: 'Open Sans';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__header-grid {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__subheader-grid {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    &__img-grid{
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
 
     &__grid-item {
+        margin: 0 22px 22px 0;
+        background-color: #EDEDED;
+        grid-row-end: span 3;
+        position: relative;
+        z-index: 0;
+        border: solid 10px #EDEDED;
+        &_rows-4{
+            grid-row-end: span 4;
+        }
+
+        &_rows-5{
+            grid-row-end: span 5;
+        }
+
+        &_rows-6{
+            grid-row-end: span 6;
+        }
+
+        &:hover{
+            border: 10px solid #666363;
+            transition: 0.5s;
+        }
+
+        &:hover > .portfolio__content-grid{
+            z-index: 1;
+            transition: 0.5s;
+            opacity: 1;
+            background: rgba(76, 73, 73, 0.7);
+        }
+
     }
 
     &__more-project {
@@ -316,8 +399,23 @@ $text-font-style: "Open Sans";
     }
 }
 .portfolio-menu {
-
+    display: flex;
     &__item {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: 45px;
+        color: #333;
+
+        &--selected{
+            border-bottom: 2px #FCBB08 solid;
+            padding: 0 4px 4px 4px;
+
+        }
     }
 }
 .metric-item {
