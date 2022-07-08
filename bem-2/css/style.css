@@ -763,3 +763,32 @@ select {
   height: 10px;
   opacity: 1;
 }
+
+.team__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.team__item {
+  max-width: 520px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+.team__img {
+  margin-top: 105px;
+}
+.team__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #333333;
+  margin-top: 35px;
+}
