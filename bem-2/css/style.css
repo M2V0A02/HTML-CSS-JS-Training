@@ -112,6 +112,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4px;
+  color: #242121;
 }
 .headline::after {
   content: "";
@@ -869,4 +870,95 @@ body {
   background: none;
   text-transform: uppercase;
   margin: 53px 0 53px 0;
+}
+
+.contact__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact__map {
+  position: relative;
+  overflow: hidden;
+  height: 896px;
+  max-width: 635px;
+  width: 100%;
+}
+.contact__map-iframe {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.contact__contain {
+  width: 570px;
+  padding: 145px 101px 0 0;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-form__input {
+  border: none;
+  border-bottom: 2px solid #373A39;
+  background: none;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 20px;
+  color: #BB8;
+  padding: 32px 0 18px 0;
+}
+.contact-form__input::-webkit-input-placeholder {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__input::-moz-placeholder {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__input:-ms-input-placeholder {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__input::-ms-input-placeholder {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__input::placeholder {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__textarea {
+  border: none;
+  border-bottom: 2px solid #373A39;
+  background: none;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 20px;
+  color: #B8B8B8;
+  padding: 32px 0 18px 0;
+  height: 156px;
+}
+.contact-form__textarea[placeholder] {
+  font-size: 12px;
+  letter-spacing: 3.70909px;
+}
+.contact-form__button {
+  background: #242121;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 230px;
+  height: 45px;
+  color: #FFFFFF;
+  margin-top: 40px;
 }

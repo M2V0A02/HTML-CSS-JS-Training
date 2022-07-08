@@ -609,15 +609,21 @@
         <section class="contact">
             <div class="container">
                 <div class="contact__body">
-                    <h2 class="headline">Get in Touch</h2>
-                    <form action="" class="contact-form">
-                        <input class="contact-form__input" type="text"  placeholder="Your Name">
-                        <input class="contact-form__input" type="text"  placeholder="Valid Email">
-                        <textarea class="contact-form__textarea" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                        <button class="contact-form__button">Send Message</button>
-                    </form>
+                    <div class="contact__contain">
+                        <h2 class="headline">Get in Touch</h2>
+                        <form action="" class="contact-form">
+                            <input class="contact-form__input" type="text"  placeholder="YOUR NAME">
+                            <input class="contact-form__input" type="text"  placeholder="VALID EMAIL">
+                            <textarea class="contact-form__textarea" name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+                            <button class="contact-form__button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact__map">
+                        <a href="https://yandex.ru/maps/54/yekaterinburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Екатеринбург</a>
+                        <a href="https://yandex.ru/maps/54/yekaterinburg/stops/station__9765105/?ll=60.606702%2C56.826060&tab=overview&utm_medium=mapframe&utm_source=maps&z=14.86" style="color:#eee;font-size:12px;position:absolute;top:14px;">Геологическая — Яндекс Карты</a>
+                        <iframe class="contact__map-iframe"src="https://yandex.ru/map-widget/v1/-/CCUNFJWnlD" frameborder="1" allowfullscreen="true"></iframe>
+                    </div>
                 </div>
-                <div class="contact__map"></div>
             </div>
         </section>
         <footer class="footer">
