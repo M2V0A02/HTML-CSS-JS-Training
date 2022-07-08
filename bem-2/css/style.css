@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -21,7 +21,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
 ol[class],
 li,
 figure,
@@ -961,4 +960,67 @@ body {
   height: 45px;
   color: #FFFFFF;
   margin-top: 40px;
+}
+
+.footer {
+  background: #373A39;
+}
+.footer__body {
+  padding: 110px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 692px;
+  margin: 0 auto;
+}
+.footer__logo-wrapper {
+  margin: 0 auto 26px auto;
+}
+.footer__hr {
+  width: 150px;
+  border: #FCBB08 1px solid;
+  margin: 0 auto 72px auto;
+}
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 65px;
+}
+.footer__item {
+  margin-right: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #A8A8A8;
+  margin-bottom: 126px;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 43px 0 41px 0;
+  background: #2A2C2B;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #CCCCCC;
 }
