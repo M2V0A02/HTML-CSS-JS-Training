@@ -127,7 +127,6 @@ body {
 
 .text {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -176,16 +175,13 @@ body {
 .header__content-headline {
   font-size: 100px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
-  font-size: 100px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 .header__content-text {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   color: #FCBB08;
@@ -666,7 +662,6 @@ body {
 .portfolio__subheader-grid {
   font-weight: 300;
   font-size: 12px;
-  line-height: 16px;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1259,6 +1254,5 @@ body {
   background: #2A2C2B;
   font-family: "Open Sans";
   font-size: 12px;
-  line-height: 16px;
   color: #CCCCCC;
 }

@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&display=swap');
 
 $small-font: 12px;
-$medium-font: 14px;
+$normal-font: 14px;
+$medium-font: 16px;
 $big-font: 40px;
-$very-big-font: 60px;
 $text-font-style: "Open Sans";
-
+$base-color: #242121;
+$yellow-color: #FCBB08;
+$base-headline-font-family:"Montserrat";
+$base-text-font-family:"Open Sans";
 body{
     background: #F6F8FA;
 }
@@ -22,34 +25,33 @@ body{
 }
 
 .headline {
-    font-family: 'Montserrat';
+    font-family: $base-headline-font-family;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: $big-font + 8;
     line-height: 75px;
     display: relative;
     display: flex;
     flex-direction: column;
     padding: 4px;
-    color: #242121;
+    color: $base-color;
     &::after{
         content: "";
         width: 60px;
         height: 4px;
-        background-color: #FCBB08;
+        background-color: $yellow-color;
 
     }
 
     @media (max-width:600px){
-        font-size: 32px;
+        font-size: $big-font - 8px;
     }
 }
 
 .text{
-    font-family: 'Open Sans';
-    font-style: normal;
+    font-family: $base-text-font-family;
     font-weight: 300;
-    font-size: 14px;
+    font-size: $normal-font;
     line-height: 24px;
     margin-bottom: 10px;
     color: #373A39;
@@ -99,21 +101,18 @@ body{
 
     &__content-headline {
         font-size: 100px;
-        font-family: 'Montserrat';
-        font-style: normal;
+        font-family: $base-headline-font-family;
         font-weight: 700;
-        font-size: 100px;
         color: #fff;
         text-align: center;
         text-transform: uppercase;
     }
 
     &__content-text {
-        font-family: 'Montserrat';
-        font-style: normal;
+        font-family: $base-headline-font-family;
         font-weight: 700;
-        font-size: 16px;
-        color: #FCBB08;
+        font-size: $medium-font;
+        color: $yellow-color;
         letter-spacing: 2.74286px;
         text-align: center;
         text-transform: uppercase;
@@ -173,7 +172,7 @@ body{
         }
 
         &--selected {
-            border-bottom:2px solid #FCBB08;
+            border-bottom:2px solid $yellow-color;
             padding:0 7px 7px 7px;
         }
     }
@@ -185,7 +184,7 @@ body{
         flex-direction: column;
         
         &__li{
-            font-size: 40px;
+            font-size: $big-font;
             margin-bottom: 25px;
             margin-right: 0;
         }
@@ -282,10 +281,10 @@ body{
     }
 
     &__text {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 400;
-        font-size: 11px;
+        font-size: $small-font - 1;
         line-height: 20px;
         letter-spacing: 1px;
         color: #1D1D1D;
@@ -344,7 +343,7 @@ body{
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 20px;
         letter-spacing: 4.2875px;
         text-transform: uppercase;
@@ -439,7 +438,7 @@ body{
         width: 100%;
         height: 100%;
         color: #fff;
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -447,8 +446,8 @@ body{
 
     &__header-grid {
         font-weight: 600;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: $normal-font;
+        line-height: $normal-font;
         text-align: center;
         letter-spacing: 1.4px;
         text-transform: uppercase;
@@ -457,8 +456,7 @@ body{
 
     &__subheader-grid {
         font-weight: 300;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: $small-font;
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -513,14 +511,14 @@ body{
     }
 
     &__more-project {
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 17px;
         text-align: center;
         letter-spacing: 1.2px;
-        color: #242121;
+        color: $base-color;
         border: none;
         background: none;
         text-transform: uppercase;
@@ -533,12 +531,12 @@ body{
         font-family: 'Merriweather';
         font-style: italic;
         font-weight: 300;
-        font-size: 18px;
+        font-size: $medium-font + 2;
         line-height: 36px;
         text-align: center;
         margin: 0 auto;
         max-width: 40em;
-        color: #242121;
+        color: $base-color;
         margin-bottom: 65px;
     }
 
@@ -546,7 +544,7 @@ body{
         font-family: 'Merriweather';
         font-style: italic;
         font-weight: 300;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 32px;
         text-align: center;
         color: #9E9E9E;
@@ -619,10 +617,10 @@ body{
     justify-content: center;
     margin-bottom: 20px;
     &__item {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 600;
-        font-size: 12px;
+        font-size: $small-font;
         line-height: 24px;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -630,7 +628,7 @@ body{
         color: #333;
 
         &--selected{
-            border-bottom: 2px #FCBB08 solid;
+            border-bottom: 2px $yellow-color solid;
             padding: 0 4px 4px 4px;
 
         }
@@ -643,16 +641,16 @@ body{
     margin-left: 15px;
     margin-bottom: 20px;
     &__number {
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-weight: 700;
         font-size: 60px;
         line-height: 73px;
-        color: #242121;
+        color: $base-color;
     }
 
     &__text {
-        font-family: 'Open Sans';
-        font-size: 14px;
+        font-family: $base-text-font-family;
+        font-size: $normal-font;
         line-height: 19px;
         color: #00B2A0;
     }
@@ -692,11 +690,11 @@ body{
 
     &__headline {
         max-width: 30em;
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-weight: 700;
-        font-size: 40px;
+        font-size: $big-font;
         line-height: 52px;
-        color: #242121;
+        color: $base-color;
         margin-bottom: 25px;
     }
 
@@ -714,12 +712,10 @@ body{
         margin-bottom: 25px;
         width: 6px;
         height: 6px;
-        background: #242121;
+        background: $base-color;
         opacity: 0.4;
         border-radius: 50%;
         margin-right: 13px;
-
-       
 
         &--active{
             width: 10px;
@@ -765,10 +761,10 @@ body{
     }
 
     &__name {
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 17px;
         text-align: center;
         color: #333333;
@@ -809,34 +805,34 @@ body{
     }
 
     &__headline {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: $medium-font;
         line-height: 22px;
-        color: #242121;
+        color: $base-color;
         margin: 24px 0 0 25px;
     }
 
     &__price {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 300;
         font-size: 80px;
         line-height: 109px;
         text-align: center;
-        color: #242121;
+        color: $base-color;
         margin-bottom: 103px;
 
         &::after{
             content: "/mo";
-            font-size: 20px;
+            font-size: $medium-font + 4;
             line-height: 27px;
         }
 
         &::before{
             content: "$";
-            font-size: 40px;
+            font-size: $big-font;
             vertical-align: super;
         }
     }
@@ -845,25 +841,25 @@ body{
     }
 
     &__feature {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
+        font-size: $medium-font;
         line-height: 22px;
         text-align: center;
-        color: #242121;
+        color: $base-color;
         margin-bottom: 52px;
     }
 
     &__button {
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 17px;
         text-align: center;
         letter-spacing: 1.2px;
-        color: #242121;
+        color: $base-color;
         border: none;
         background: none;
         text-transform: uppercase;
@@ -927,14 +923,14 @@ body{
         border: none;
         border-bottom: 2px solid #373A39;
         background: none;
-        font-family: 'Open Sans';
-        font-size: 24px;
+        font-family: $base-text-font-family;
+        font-size: $medium-font + 8;
         line-height: 20px;
         color: #BB8;
         padding: 32px 0 18px 0;
 
         &::placeholder{
-            font-size: 12px;
+            font-size: $small-font;
             letter-spacing: 3.70909px;
         }
     }
@@ -943,25 +939,25 @@ body{
         border: none;
         border-bottom: 2px solid #373A39;
         background: none;
-        font-family: 'Open Sans';
-        font-size: 24px;
+        font-family: $base-text-font-family;
+        font-size: $medium-font + 8;
         line-height: 20px;
         color: #B8B8B8;
         padding: 32px 0 18px 0;
         height: 156px;
         
         &[placeholder]{
-            font-size: 12px;
+            font-size: $small-font;
             letter-spacing: 3.70909px;
         }
     }
 
     &__button {
-        background: #242121;
+        background: $base-color;
         text-transform: uppercase;
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-weight: 700;
-        font-size: 11px;
+        font-size: $small-font - 1;
         line-height: 13px;
         text-align: center;
         letter-spacing: 2px;
@@ -994,7 +990,7 @@ body{
 
     &__hr{
         width: 150px;
-        border: #FCBB08 1px solid;
+        border: $yellow-color 1px solid;
         margin:0 auto 72px auto;
     }
 
@@ -1010,10 +1006,10 @@ body{
     &__item {
         margin-right: 15px;
         margin-bottom: 20px;
-        font-family: 'Montserrat';
+        font-family: $base-headline-font-family;
         font-style: normal;
         font-weight: 300;
-        font-size: 12px;
+        font-size: $small-font;
         line-height: 15px;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -1021,10 +1017,10 @@ body{
     }
 
     &__text {
-        font-family: 'Open Sans';
+        font-family: $base-text-font-family;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: $normal-font;
         line-height: 32px;
         text-align: center;
         color: #A8A8A8;
@@ -1035,9 +1031,8 @@ body{
         text-align: center;
         padding:43px 0 41px 0;
         background: #2A2C2B;
-        font-family: 'Open Sans';
-        font-size: 12px;
-        line-height: 16px;
+        font-family: $base-text-font-family;
+        font-size: $small-font;
         color: #CCCCCC;
     }
 }
