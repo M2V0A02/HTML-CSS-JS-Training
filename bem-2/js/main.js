@@ -1,3 +1,11 @@
+$('.header__hamburger').click(function(){
+    
+    if($('.header__menu-wrapper').css('display') == 'block')
+        $('.header__menu-wrapper').fadeOut(1000);
+    else
+        $('.header__menu-wrapper').fadeIn(1000);
+});
+
 $('.horizontal-charts__item').each(function(){
     let percent = $(this).find('.horizontal-charts__percent').text().replace('%', "");
     let widthParent = $(this).find('.horizontal-charts__line').css('width').replace('px', '');

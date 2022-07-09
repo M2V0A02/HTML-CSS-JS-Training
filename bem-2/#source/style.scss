@@ -50,6 +50,16 @@ body{
     margin-bottom: 10px;
     color: #373A39;
 }
+
+.logo {
+
+    &__link {
+    }
+
+    &__img {
+    }
+}
+
 .header {
 
     &__top {
@@ -62,6 +72,11 @@ body{
         align-items: center;
     }
 
+    &__logo-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__content {
         background: url("../img/Header-bg.png");
         background-size: cover;
@@ -72,6 +87,10 @@ body{
     &__content-body {
         display: flex;
         flex-direction: column;
+    }
+
+    &__hamburger{
+        display: none;
     }
 
     &__content-headline {
@@ -101,33 +120,71 @@ body{
         height: 35px;
         margin: auto auto 0 auto;
     }
-}
-.logo {
 
-    &__link {
+    @media(max-width:780px){
+        &__top-body{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo-wrapper{
+            margin-bottom: 20px;
+        }
     }
 
-    &__img {
+    @media(max-width: 580px){
+        &__menu-wrapper{
+            display: none;
+
+            &--visibility{
+                display: block;
+            }
+        }
+
+        &__logo-wrapper{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__hamburger{
+            display: inline-block;
+        }
+
+        &__content-headline{
+            font-size: 75px;
+        }
     }
 }
+
 .header-menu {
     display: flex;
     &__li {
         text-transform: uppercase;
         margin-right: 50px;
         font: 700 $small-font "Raleway";
+        text-align: center;
 
         &:last-child{
             margin-right: 0px;
-            padding:0 7px 9px 7px;
         }
 
         &--selected {
             border-bottom:2px solid #FCBB08;
+            padding:0 7px 7px 7px;
         }
     }
 
     &__link {
+    }
+
+    @media(max-width: 580px){
+        flex-direction: column;
+        
+        &__li{
+            font-size: 40px;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
     }
 }
 .about {
