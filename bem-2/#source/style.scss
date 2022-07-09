@@ -12,7 +12,7 @@ body{
 }
 
 .container {
-    width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -38,6 +38,10 @@ body{
         height: 4px;
         background-color: #FCBB08;
 
+    }
+
+    @media (max-width:600px){
+        font-size: 32px;
     }
 }
 
@@ -190,7 +194,7 @@ body{
 .about {
 
     &__body {
-        padding: 143px 0 255px 0;
+        padding: 143px 20px 255px 20px;
         display: flex;
         justify-content: center;
 
@@ -214,6 +218,13 @@ body{
     &__text {
         
     }
+
+    @media (max-width:800px){
+        &__body{
+            flex-direction: column;
+        }
+    }
+
 }
 
 
@@ -222,6 +233,7 @@ body{
     &__body {
         display: flex;
         flex-direction: column;
+        padding:0 20px;
     }
 
     &__content {
@@ -238,6 +250,20 @@ body{
     &__items{
         display: flex;
         margin-top: 125px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width:1100px){
+        &__row{
+            flex-direction: column;
+            justify-content: center;
+            margin:0 auto;
+            padding-top: 25px;
+        }
+
+        &__content{
+            margin-top: 25px;
+        }
     }
 }
 .horizontal-charts {
@@ -280,12 +306,26 @@ body{
     }
 
     & > *:last-child{
-        margin: 0;
+        margin-bottom: 0;
     }    
+
+    @media(max-width:1100px){
+        &__item{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media(max-width:500px){
+        &__line{
+            width: 200px;
+        }
+    }
 }
 
 .expertise-item {
     display: flex;
+    margin: 20px 10px 0 10px;
     &__img {
         width: 50px;
         height: 50px;
@@ -327,15 +367,15 @@ body{
     }
 }
 .features {
-
+    margin-top: 50px;
     &__body {
         display: flex;
         justify-content: center;
     }
 
     &__img {
-        width: 705px;
-        height: 840px;
+        max-width: 705px;
+        max-height: 840px;
     }
 
     &__content {
@@ -351,16 +391,35 @@ body{
 
     &__text {
     }
+
+    @media (max-width:1100px){
+        &__body{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin:0 auto;
+        }
+
+        &__content{
+            margin:50px auto 0 auto;
+        }
+    }
 }
 .portfolio {
 
     &__body {
     }
 
+    &__headline{
+        margin:0 auto;
+    }
+
     &__row{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__grid {
@@ -370,7 +429,6 @@ body{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(9, 1fr);
         width: 100%;
-        height: 900px;
     }
 
     &__content-grid {
@@ -414,6 +472,9 @@ body{
     }
 
     &__grid-item {
+        min-height: 343px;
+        max-height: 523px;
+        width: 293px;
         margin: 0 22px 22px 0;
         background-color: #EDEDED;
         grid-row-end: span 3;
@@ -510,11 +571,53 @@ body{
         display: flex;
         justify-content: space-around;
         padding: 164px 0 194px 0;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width:1200px){
+        &__grid{
+            grid-template-columns: repeat(3, 1fr);
+            
+        }
+    }
+
+
+    @media (max-width: 950px){
+        &__grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 730px){
+        &__grid{
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            grid-template-rows: auto;
+        }
+
+        &__grid-item{
+            margin:0 auto 50px auto;
+
+            &_rows-4{
+                grid-row-end: auto;
+            }
+    
+            &_rows-5{
+                grid-row-end: auto;
+            }
+    
+            &_rows-6{
+                grid-row-end: auto;
+            }
+        }
     }
 }
 
 .portfolio-menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
     &__item {
         font-family: 'Open Sans';
         font-style: normal;
@@ -537,6 +640,8 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 100px;
+    margin-left: 15px;
+    margin-bottom: 20px;
     &__number {
         font-family: 'Montserrat';
         font-weight: 700;
@@ -551,6 +656,7 @@ body{
         line-height: 19px;
         color: #00B2A0;
     }
+
 }
 .slider {
     position: relative;
@@ -621,6 +727,18 @@ body{
             opacity: 1;
         }
     }
+
+    @media(max-width:900px){
+        padding-left: 10px;
+        padding-right: 10px;
+        &__forward{
+            display: none;
+        }
+
+        &__back{
+            display: none;
+        }
+    }
 }
 .team {
 
@@ -630,6 +748,7 @@ body{
     &__items {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__item {
@@ -655,6 +774,19 @@ body{
         color: #333333;
         margin-top: 35px;
     }
+
+    @media(max-width:1200px){
+        &__headline{
+            width: 8em;
+            margin:0 auto;
+        }
+    }
+
+    @media(max-width:680px){
+        &__item{
+            margin-right: 0;
+        }
+    }
 }
 .pricing {
 
@@ -665,6 +797,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         margin: 93px 0 0 0;
+        justify-content: center;
     }
 
     &__item {
@@ -736,11 +869,24 @@ body{
         text-transform: uppercase;
         margin: 53px 0 53px 0;
     }
+
+    @media(max-width:1200px){
+        &__headline-h2{
+            width: 8em;
+            margin:0 auto;
+        }
+    }
+    @media(max-width:680px){
+        &__item{
+            margin-right: 0;
+        }
+    }
 }
 .contact {
 
     &__body {
         display: flex;
+        justify-content: center;
     }
 
     &__map {
@@ -748,7 +894,7 @@ body{
         overflow:hidden;
         height: 896px;
         max-width: 635px;
-        width: 100%;
+        width: 80%;
     }
 
     &__map-iframe{
@@ -759,7 +905,18 @@ body{
 
     &__contain{
         width: 570px;
-        padding: 145px 101px 0 0;
+        padding: 145px 10px 0 10px;
+    }
+
+
+    @media(max-width:1100px){
+        &__body{
+            flex-wrap: wrap;
+        }
+
+        &__contain{
+            padding: 145px 10px 0 10px;
+        }
     }
 }
 .contact-form {
@@ -813,6 +970,12 @@ body{
         color: #FFFFFF;
         margin-top: 40px;
     }
+
+    @media(max-width:1000px){
+        &__button{
+            margin: 50px auto;
+        }
+    }
 }
 .footer {
     
@@ -841,10 +1004,12 @@ body{
         display: flex;
         justify-content: center;
         margin-bottom: 65px;
+        flex-wrap: wrap;
     }
 
     &__item {
         margin-right: 15px;
+        margin-bottom: 20px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 300;
