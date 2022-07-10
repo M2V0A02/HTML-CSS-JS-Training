@@ -1,0 +1,57 @@
+@import "normalize.scss";
+
+.container{
+    max-width: 600px;
+    margin:0 auto;
+}
+
+.form {
+
+    &__healine {
+    }
+
+    &__text {
+
+        em{
+            color: red;
+        }
+    }
+    &__input{
+        &:target{
+            display: block;
+            content: "text";
+        }
+    }
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+
+        &--grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__legend {
+        font-variant: small-caps;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        width: 110px;
+    }
+
+    &__submit-wrapper {
+        margin-top: 25px;
+    }
+
+    &__submit {
+        width: 180px;
+        height: 39px;
+        margin: 0 auto;
+    }
+}
