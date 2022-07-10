@@ -98,11 +98,11 @@ body {
 
 .headline {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 75px;
-  display: relative;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +348,6 @@ body {
 }
 .horizontal-charts__text {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 20px;
@@ -403,7 +402,6 @@ body {
 }
 .expertise-item__headline {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -720,7 +718,6 @@ body {
 }
 .portfolio__more-project {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -832,7 +829,6 @@ body {
 }
 .portfolio-menu__item {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 24px;
@@ -976,7 +972,6 @@ body {
 }
 .team__name {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -1021,7 +1016,6 @@ body {
 }
 .pricing__headline {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -1030,7 +1024,6 @@ body {
 }
 .pricing__price {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 300;
   font-size: 80px;
   line-height: 109px;
@@ -1050,7 +1043,6 @@ body {
 }
 .pricing__feature {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -1060,7 +1052,6 @@ body {
 }
 .pricing__button {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -1129,6 +1120,7 @@ body {
 }
 .contact-form__input {
   border: none;
+  background: none;
   border-bottom: 2px solid #373A39;
   background: none;
   font-family: "Open Sans";
@@ -1159,8 +1151,8 @@ body {
 }
 .contact-form__textarea {
   border: none;
-  border-bottom: 2px solid #373A39;
   background: none;
+  border-bottom: 2px solid #373A39;
   font-family: "Open Sans";
   font-size: 24px;
   line-height: 20px;
@@ -1230,7 +1222,6 @@ body {
   margin-right: 15px;
   margin-bottom: 20px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
@@ -1240,7 +1231,6 @@ body {
 }
 .footer__text {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 32px;

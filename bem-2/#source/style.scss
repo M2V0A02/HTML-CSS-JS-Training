@@ -10,6 +10,17 @@ $base-color: #242121;
 $yellow-color: #FCBB08;
 $base-headline-font-family:"Montserrat";
 $base-text-font-family:"Open Sans";
+
+@mixin button-and-textarea-normalize {
+    border: none;
+    background: none;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     background: #F6F8FA;
 }
@@ -26,13 +37,11 @@ body{
 
 .headline {
     font-family: $base-headline-font-family;
-    font-style: normal;
     font-weight: 700;
     font-size: $big-font + 8;
-    line-height: 75px;
-    display: relative;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    @include flex-column();
     padding: 4px;
     color: $base-color;
     &::after{
@@ -91,8 +100,7 @@ body{
     }
 
     &__content-body {
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
     }
 
     &__hamburger{
@@ -230,16 +238,13 @@ body{
 .expertise {
 
     &__body {
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
         padding:0 20px;
     }
 
     &__content {
         max-width: 600px;
     }
-
-    
 
     &__row{
         display: flex;
@@ -266,8 +271,7 @@ body{
     }
 }
 .horizontal-charts {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
 
     &__item {
     }
@@ -282,7 +286,6 @@ body{
 
     &__text {
         font-family: $base-text-font-family;
-        font-style: normal;
         font-weight: 400;
         font-size: $small-font - 1;
         line-height: 20px;
@@ -341,7 +344,6 @@ body{
     }
     &__headline {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: $normal-font;
         line-height: 20px;
@@ -379,8 +381,7 @@ body{
 
     &__content {
         margin: 103px 0 100px 132px;
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
         max-width: 460px;
     }
 
@@ -439,8 +440,7 @@ body{
         height: 100%;
         color: #fff;
         font-family: $base-text-font-family;
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
         justify-content: center;
     }
 
@@ -506,21 +506,18 @@ body{
     }
 
     &__content{
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
     }
 
     &__more-project {
         font-family: $base-headline-font-family;
-        font-style: normal;
         font-weight: 700;
         font-size: $normal-font;
         line-height: 17px;
         text-align: center;
         letter-spacing: 1.2px;
         color: $base-color;
-        border: none;
-        background: none;
+        @include button-and-textarea-normalize();
         text-transform: uppercase;
         margin-bottom: 180px;
     }
@@ -618,7 +615,7 @@ body{
     margin-bottom: 20px;
     &__item {
         font-family: $base-text-font-family;
-        font-style: normal;
+        
         font-weight: 600;
         font-size: $small-font;
         line-height: 24px;
@@ -635,8 +632,7 @@ body{
     }
 }
 .metric-item {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     max-width: 100px;
     margin-left: 15px;
     margin-bottom: 20px;
@@ -683,8 +679,7 @@ body{
     }
 
     &__body {
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
         max-width: 700px;
     }
 
@@ -762,7 +757,7 @@ body{
 
     &__name {
         font-family: $base-headline-font-family;
-        font-style: normal;
+        
         font-weight: 700;
         font-size: $normal-font;
         line-height: 17px;
@@ -800,13 +795,12 @@ body{
         background: #fff;
         width: 350px;
         margin:0 33px 33px 0;
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
     }
 
     &__headline {
         font-family: $base-text-font-family;
-        font-style: normal;
+        
         font-weight: 700;
         font-size: $medium-font;
         line-height: 22px;
@@ -816,7 +810,7 @@ body{
 
     &__price {
         font-family: $base-text-font-family;
-        font-style: normal;
+        
         font-weight: 300;
         font-size: 80px;
         line-height: 109px;
@@ -842,7 +836,7 @@ body{
 
     &__feature {
         font-family: $base-text-font-family;
-        font-style: normal;
+        
         font-weight: 300;
         font-size: $medium-font;
         line-height: 22px;
@@ -853,15 +847,14 @@ body{
 
     &__button {
         font-family: $base-headline-font-family;
-        font-style: normal;
+        
         font-weight: 700;
         font-size: $normal-font;
         line-height: 17px;
         text-align: center;
         letter-spacing: 1.2px;
         color: $base-color;
-        border: none;
-        background: none;
+        @include button-and-textarea-normalize();
         text-transform: uppercase;
         margin: 53px 0 53px 0;
     }
@@ -916,11 +909,10 @@ body{
     }
 }
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
 
     &__input {
-        border: none;
+        @include button-and-textarea-normalize();
         border-bottom: 2px solid #373A39;
         background: none;
         font-family: $base-text-font-family;
@@ -936,9 +928,8 @@ body{
     }
 
     &__textarea {
-        border: none;
+        @include button-and-textarea-normalize();
         border-bottom: 2px solid #373A39;
-        background: none;
         font-family: $base-text-font-family;
         font-size: $medium-font + 8;
         line-height: 20px;
@@ -978,8 +969,7 @@ body{
     background: #373A39;
     &__body {
         padding: 110px 0 0 0;
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
         max-width: 692px;
         margin: 0 auto;
     }
@@ -1007,7 +997,6 @@ body{
         margin-right: 15px;
         margin-bottom: 20px;
         font-family: $base-headline-font-family;
-        font-style: normal;
         font-weight: 300;
         font-size: $small-font;
         line-height: 15px;
@@ -1018,7 +1007,7 @@ body{
 
     &__text {
         font-family: $base-text-font-family;
-        font-style: normal;
+        
         font-weight: 400;
         font-size: $normal-font;
         line-height: 32px;
