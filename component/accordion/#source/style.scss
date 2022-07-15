@@ -1,0 +1,69 @@
+@import "normalize.scss";
+:root{
+    --bs-accordion-active-color:black;
+}
+.accordion {
+
+    &__body {
+    }
+
+    &__item {
+        padding: 1em 2em;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__headline {
+    }
+
+    &__slider {
+        width: 16px;
+        height: 16px;
+        background: url("../img/down-arrow-svgrepo-com.svg");
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__text {
+    }
+}
+
+.accordion-button:not(.collapsed){
+    color: red;
+    animation: rotate-360 5s forwards;
+}
+
+@keyframes rotate-180{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-360{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: translate(25px, 25px) rotate(160deg);
+    }
+}
+
+@keyframes rotate-0{
+    from{
+        transform: rotate(180deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
