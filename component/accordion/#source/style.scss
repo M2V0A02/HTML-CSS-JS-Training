@@ -1,0 +1,51 @@
+@import "normalize.scss";
+.accordion {
+
+    &__body {
+    }
+
+    &__item {
+        padding: 1em 2em;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__headline {
+    }
+
+    &__slider {
+        width: 16px;
+        height: 16px;
+        background: url("../img/down-arrow-svgrepo-com.svg");
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__text {
+    }
+}
+
+@keyframes rotate-180{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-0{
+    from{
+        transform: rotate(180deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
