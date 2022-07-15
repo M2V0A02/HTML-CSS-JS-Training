@@ -82,10 +82,13 @@ select {
     scroll-behavior: auto !important;
   }
 }
+<<<<<<< HEAD
 :root {
   --bs-accordion-active-color:black;
 }
 
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 .accordion__item {
   padding: 1em 2em;
 }
@@ -105,12 +108,15 @@ select {
 .accordion__content {
   display: none;
 }
+<<<<<<< HEAD
 .accordion-button:not(.collapsed) {
   color: red;
   -webkit-animation: rotate-360 5s forwards;
           animation: rotate-360 5s forwards;
 }
 
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 @-webkit-keyframes rotate-180 {
   from {
     -webkit-transform: rotate(0deg);
@@ -121,7 +127,10 @@ select {
             transform: rotate(180deg);
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 @keyframes rotate-180 {
   from {
     -webkit-transform: rotate(0deg);
@@ -132,6 +141,7 @@ select {
             transform: rotate(180deg);
   }
 }
+<<<<<<< HEAD
 @-webkit-keyframes rotate-360 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -152,6 +162,8 @@ select {
             transform: translate(25px, 25px) rotate(160deg);
   }
 }
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 @-webkit-keyframes rotate-0 {
   from {
     -webkit-transform: rotate(180deg);

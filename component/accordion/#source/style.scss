@@ -1,7 +1,10 @@
 @import "normalize.scss";
+<<<<<<< HEAD
 :root{
     --bs-accordion-active-color:black;
 }
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 .accordion {
 
     &__body {
@@ -33,11 +36,14 @@
     }
 }
 
+<<<<<<< HEAD
 .accordion-button:not(.collapsed){
     color: red;
     animation: rotate-360 5s forwards;
 }
 
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 @keyframes rotate-180{
     from{
         transform: rotate(0deg);
@@ -48,6 +54,7 @@
     }
 }
 
+<<<<<<< HEAD
 @keyframes rotate-360{
     0%{
         transform: rotate(0deg);
@@ -58,6 +65,8 @@
     }
 }
 
+=======
+>>>>>>> 5665dc0ce2fc04398110bbe0bedfea821809ffe1
 @keyframes rotate-0{
     from{
         transform: rotate(180deg);
