@@ -79,3 +79,18 @@ function funcA() {
 }
 
 funcA()
+
+console.log(sum(1, 41))
+
+function sum(a, b) {
+    return a + b
+}
+
+let i = 42
+const num = 42
+console.log(num)
+
+console.log(square(2))
+var square = function(num) {
+    return num ** 2
+}
