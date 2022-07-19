@@ -90,7 +90,14 @@ let i = 42
 const num = 42
 console.log(num)
 
-console.log(square(2))
+
 var square = function(num) {
     return num ** 2
 }
+console.log(square(2))
+
+const PORT = 8080
+const array = ['Javascript', 'is', 'Awesome']
+array.push('!')
+array[0] = 'JS'
+console.log(array)
