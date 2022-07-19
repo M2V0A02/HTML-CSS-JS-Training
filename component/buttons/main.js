@@ -34,3 +34,48 @@ console.log('42' - 40 * 10)
 console.log('42px' - 2)
 console.log(null + 2)
 console.log(undefined + 42)
+
+console.log('0' == false)
+console.log('0' == 0)
+console.log(0 === 0)
+
+console.log(false == [])
+console.log(false == '')
+console.log(false == {})
+
+let a = 42
+let b = a
+b++
+console.log('a:', a)
+console.log('b', b)
+
+a = [1, 2, 3]
+b = a
+b.push(4)
+
+let c = [1, 2, 3, 4]
+
+console.log(a)
+console.log(b)
+console.log(a === b)
+console.log(a === c)
+
+function funcA() {
+    let a = 1
+
+    function funcB() {
+        let b = 2
+
+        function funcC() {
+            let c = 3
+
+            console.log('funcC:', a, b, c)
+        }
+        funcC()
+        console.log('funcB:', a, b)
+    }
+    funcB()
+    console.log('funcA', a)
+}
+
+funcA()
