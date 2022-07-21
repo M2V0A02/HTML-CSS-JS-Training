@@ -224,6 +224,11 @@ body {
     font-size: 75px;
   }
 }
+@media (max-width: 350px) {
+  .header__content-headline {
+    font-size: 55px;
+  }
+}
 
 .header-menu {
   display: -webkit-box;
@@ -304,6 +309,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 20px;
 }
 .expertise__items {
   display: -webkit-box;
@@ -457,9 +463,6 @@ body {
   }
 }
 
-.portfolio__headline {
-  margin: 0 auto;
-}
 .portfolio__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,6 +475,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 20px;
 }
 .portfolio__grid {
   display: -ms-grid;
@@ -672,7 +676,7 @@ body {
   width: 100%;
 }
 .portfolio__grid-item {
-  min-height: 343px;
+  min-height: 260px;
   max-height: 523px;
   width: 293px;
   margin: 0 22px 22px 0;

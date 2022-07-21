@@ -101,3 +101,22 @@ const array = ['Javascript', 'is', 'Awesome']
 array.push('!')
 array[0] = 'JS'
 console.log(array)
+
+function createFrameworkManager() {
+    const fw = ['Angular', 'React']
+
+    return {
+        print: function() {
+            console.log(fw.join(' '))
+        },
+        add: function(framework){
+            fw.push(framework)
+        }
+    }
+}
+
+const manager = createFrameworkManager()
+
+manager.print()
+manager.add('VueJS')
+manager.print()
