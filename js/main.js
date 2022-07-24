@@ -95,7 +95,6 @@ function sum(a, b) {
     return a + b
 }
 
-let i = 42
 const num = 42
 console.log(num)
 
@@ -129,3 +128,28 @@ const manager = createFrameworkManager()
 manager.print()
 manager.add('VueJS')
 manager.print()
+
+const fib = [1, 2, 3, 5, 8, 13]
+/*
+for (var i = 0; i < fib.length; i++){
+    (function(j){
+        setTimeout(function() {
+            console.log(`fib[${j}] = ${fib[j]}`)
+    
+        }, 1500)
+    })(i)
+    
+}
+*/
+
+let result = []
+for (var i = 0; i < 5; i++) {
+    ( function() {
+        var j = i;
+        result.push(function() {console.log(j)} )
+    })()
+}
+
+result[1]()
+result[2]()
+result[4]()
