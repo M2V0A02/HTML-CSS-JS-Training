@@ -244,3 +244,26 @@ person.name = 'Vlad'
 
 console.log('skin' in person)
 console.log(person.legs)
+console.log(person.name)
+
+console.log(person.hasOwnProperty('name'))
+console.log(person.hasOwnProperty('skin'))
+
+var proto = {year: 2019}
+var myYear = Object.create(proto)
+
+console.log(myYear.year)
+
+proto.year = 2200
+
+console.log(myYear.year)
+
+const first = () => console.log('first')
+const second = () => console.log('second')
+const third = () => console.log('third')
+
+first()
+
+setTimeout(second, 0)
+
+third()
