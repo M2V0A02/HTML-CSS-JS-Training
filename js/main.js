@@ -154,7 +154,7 @@ result[1]()
 result[2]()
 result[4]()
 
-const person = {
+var person = {
     surname: 'Старк',
     knows: function (what, name) {
         console.log(`Ты ${what} знаешь, ${name} ${this.surname}`)
@@ -216,5 +216,31 @@ function myNew(constructor, ...args) {
     return constructor.apply(obj, args) || obj
 }
 
-const cat = myNew(Cat, 'black', 'cat')
+var cat = myNew(Cat, 'black', 'cat')
 console.log(cat)
+
+function Cat(name, color) {
+    this.name = name
+    this.color = color
+}
+
+Cat.prototype.voice = function() {
+    console.log(`Cat ${this.name} says mvay`)
+}
+
+var cat = new Cat('Kot', 'white');
+
+console.log(Cat.prototype)
+console.log(cat)
+console.log(cat.__proto__ === Cat.prototype)
+console.log(cat.constructor)
+
+function Person() {}
+Person.prototype.legs = 2
+Person.prototype.skin = 'white'
+
+var person = new Person()
+person.name = 'Vlad'
+
+console.log('skin' in person)
+console.log(person.legs)
