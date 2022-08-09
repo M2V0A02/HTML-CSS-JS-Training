@@ -3,22 +3,22 @@ const p = new Promise(function(resolse, reject) {
         console.log('preparing data...')
         const backendData = {
             server: 'asw',
-            port: 2000,
+            port: 1000,
             status: 'working'
         }
         resolse(backendData)
-    }, 2000)
+    }, 1000)
 })
 
 p.then(data => {
-    const p2 = new Promise((resolse, reject) => {
+    return new Promise((resolse, reject) => {
         setTimeout(() => {
             data.modified = true
             resolse(data)
-        }, 2000)
+        }, 1000)
     })
-
-    p2.then(cliendData => {
-        console.log('Data received', cliendData)
-    })
-})
+}).then(clientData => {
+    clientData.fromPromise = true
+    console.log(clientData)
+    return clientData
+})  
