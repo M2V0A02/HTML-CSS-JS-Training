@@ -11,5 +11,14 @@ const p = new Promise(function(resolse, reject) {
 })
 
 p.then(data => {
-    console.log('Promise resolved', data);
+    const p2 = new Promise((resolse, reject) => {
+        setTimeout(() => {
+            data.modified = true
+            resolse(data)
+        }, 2000)
+    })
+
+    p2.then(cliendData => {
+        console.log('Data received', cliendData)
+    })
 })
