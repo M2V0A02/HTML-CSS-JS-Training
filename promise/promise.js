@@ -21,3 +21,19 @@ p.then(data => {
   .catch(err => console.error(err))
   .then(data => console.log(data))
   .finally( () => console.log('finnaly'))
+
+const sleep = ms => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(), ms)
+    })
+}
+
+sleep(2000).then(() => console.log('After 2 sec'))
+
+Promise.all([sleep(2000), sleep(5000)]).then(() => {
+    console.log('All promise');
+})
+
+Promise.race([sleep(2000), sleep(5000)]).then(() => {
+    console.log('promise');
+})
