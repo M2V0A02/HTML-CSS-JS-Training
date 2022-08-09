@@ -6,10 +6,10 @@ const p = new Promise(function(resolse, reject) {
             port: 2000,
             status: 'working'
         }
-        resolse()
+        resolse(backendData)
     }, 2000)
 })
 
-p.then(() => {
-    console.log('Promise resolved');
+p.then(data => {
+    console.log('Promise resolved', data);
 })
