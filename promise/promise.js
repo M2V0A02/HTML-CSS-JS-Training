@@ -9,3 +9,7 @@ const p = new Promise(function(resolse, reject) {
         resolse()
     }, 2000)
 })
+
+p.then(() => {
+    console.log('Promise resolved');
+})
