@@ -14,11 +14,10 @@ p.then(data => {
     return new Promise((resolse, reject) => {
         setTimeout(() => {
             data.modified = true
-            resolse(data)
+            reject(data)
         }, 1000)
     })
-}).then(clientData => {
-    clientData.fromPromise = true
-    console.log(clientData)
-    return clientData
-})  
+})
+  .catch(err => console.error(err))
+  .then(data => console.log(data))
+  .finally( () => console.log('finnaly'))
