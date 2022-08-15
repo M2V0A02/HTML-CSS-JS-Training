@@ -1,4 +1,7 @@
-isInteger = num => num == (num ^ 0) ? true : false
+function rowSumOddNumbers(n) {
+    const out = Array.from( {length: n * (n + 1) / 2}, (_, i) => i * 2 + 1)
 
-console.log(isInteger(1))
-console.log(isInteger(1.6))
+    return out.slice(out.length - n).reduce((sum, current) => sum += current, 0);
+}
+
+console.log(rowSumOddNumbers(30000));
